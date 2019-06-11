@@ -4,49 +4,54 @@
 <head>
   <meta charset="UTF-8">
   <title>Device</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="header__left-wrapper">
+        <div class="header__container">
             <div class="header__logo logo">
                 <a class="logo__link">
-                    <img class="logo__img" src="#" alt="device">
+                    <img class="logo__img" src="img/device.svg" alt="device" width="163" height="35">
                 </a>
             </div>
-            <div class="header__search search">
-                <form class="search__form" action="get">
-                    <button class="search__button" type="submit"></button>
-                    <input class="search__input" type="text" name="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
-                </form>
-            </div>
-        </div>
-        <div class="header__right-wrapper">
-            <div class="header__user-menu user-menu">
-                <ul class="user-menu__list">
-                    <li class="user-menu__item">
-                        <img class="user-menu__img" src="#" alt="Войти">
-                        <a class="user-menu__link" href="login.html">Войти</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header__interface interface">
-                <div class="interface__wrapper">
-                    <img class="interface__img" src="#" alt="Сравнить">
-                    <a class="interface__link" href="#">Сравнить</a>
+            <div class="header__wrapper">
+                <div class="header__search search">
+                    <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
+                        <button class="search__button" type="submit">
+                            <img class="search__button-img" src="img/search.svg" alt="кнопка поиска" width="16" height="16">
+                        </button>
+                        <input class="search__input" type="text" name="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+                    </form>
                 </div>
-                <div>
-                    <img class="interface__img" src="#" alt="Корзина">
-                    <a class="interface__link" href="#">Корзина</a>
+                <div class="header__user-block">
+                    <div class="header__user-menu user-menu">
+                        <ul class="user-menu__list">
+                            <li class="user-menu__item">
+                                <img class="user-menu__img" src="img/user.svg" alt="Войти" width="13" height="12">
+                                <a class="user-menu__link" href="login.html">Войти</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__interface interface">
+                        <div class="interface__wrapper">
+                            <img class="interface__img" src="img/compare.svg" alt="Сравнить" width="10" height="10">
+                            <a class="interface__link" href="#">Сравнить</a>
+                        </div>
+                        <div class="interface__wrapper">
+                            <img class="interface__img" src="img/cart.svg" alt="Корзина" width="10" height="10">
+                            <a class="interface__link" href="#">Корзина</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+          </div>
         </div>
         <nav class="header__nav nav">
             <ul class="nav__menu menu">
                 <li class="menu__item">
                     <a class="menu__link" href="#">Каталог товаров</a>
                     <button class="menu__button"></button>
-                    <ul class="menu__catalog catalog visually-hidden">
+                    <ul class="menu__catalog catalog">
                         <li class="catalog__item">
                             <a class="catalog__link" href="#">Виртуальная реальность</a>
                         </li>
@@ -70,13 +75,13 @@
             </ul>
             <ul class="nav__menu menu">
                 <li class="menu__item">
-                    <a class="menu__link" href="#"></a>
+                    <a class="menu__link" href="#">Доставка</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#"></a>
+                    <a class="menu__link" href="#">Гарантия</a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#"></a>
+                    <a class="menu__link" href="#">Контакты</a>
                 </li>
             </ul>
         </nav>
