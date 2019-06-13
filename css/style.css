@@ -74,24 +74,21 @@ img {
 /* Header */
 
 .header {
-  position: relative;
   width: 1160px;
   padding: 0 60px;
   margin: 0 auto;
-  margin-top: 40px;
-  background-color: #f7e296;
+  margin-top: 21px;
+  background-image: linear-gradient(to bottom,#ffffff 19px, #f7e296 19px);
 }
 
 .header__logo {
-  position: absolute;
-  top: -10%;
+  margin-bottom: 19px;
 }
 
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 35px;
-  padding-top: 44px;
 }
 
 .search__input {
