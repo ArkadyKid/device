@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Device</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -24,35 +25,35 @@
                         <input class="search__input" type="text" name="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
                     </form>
                 </div>
-                <div class="header__user-block">
-                    <div class="header__user-menu user-menu">
+                <div class="header__user-block user-menu">
+                    <div class="user-menu__block">
                         <ul class="user-menu__list">
-                            <li class="user-menu__item">
+                            <li class="user-menu__item user-menu__item--login">
                                 <img class="user-menu__img" src="img/user.svg" alt="Войти" width="13" height="12">
                                 <a class="user-menu__link" href="login.html">Войти</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="header__interface interface">
-                        <div class="interface__wrapper">
-                            <img class="interface__img" src="img/compare.svg" alt="Сравнить" width="10" height="10">
-                            <a class="interface__link" href="#">Сравнить</a>
+                    <div class="user-menu__block">
+                        <div class="user-menu__item">
+                            <img class="user-menu__img" src="img/compare.svg" alt="Сравнить" width="10" height="10">
+                            <a class="user-menu__link" href="#">Сравнить</a>
                         </div>
-                        <div class="interface__wrapper">
-                            <img class="interface__img" src="img/cart.svg" alt="Корзина" width="10" height="10">
-                            <a class="interface__link" href="#">Корзина</a>
+                        <div class="user-menu__item">
+                            <img class="user-menu__img" src="img/cart.svg" alt="Корзина" width="12" height="12">
+                            <a class="user-menu__link" href="#">Корзина</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <nav class="header__nav nav">
-            <ul class="nav__menu menu">
-                <li class="menu__item">
-                    <a class="menu__link" href="#">Каталог товаров</a>
-                    <img class="menu__img" src="img/plus.png" alt="каталог" width="16" height="16">
-                    <div class="menu__catalog catalog">
-                        <ul class="catalog__list">
+            <ul class="nav__catalog-menu header-menu catalog">
+                <li class="catalog__container">
+                    <a class="catalog__title" href="#">Каталог товаров</a>
+                    <img class="catalog__img" src="img/plus.png" alt="каталог" width="16" height="16">
+                    <div class="catalog__wrapper">
+                        <ul class="catalog__list header-menu">
                             <li class="catalog__item">
                                 <a class="catalog__link" href="#">Виртуальная реальность</a>
                             </li>
@@ -63,7 +64,7 @@
                                 <a class="catalog__link" href="#">Экшн-камеры</a>
                             </li>
                         </ul>
-                        <ul class="catalog__list">
+                        <ul class="catalog__list header-menu">
                             <li class="catalog__item">
                                 <a class="catalog__link" href="#">Фитнес-браслеты</a>
                             </li>
@@ -71,7 +72,7 @@
                                 <a class="catalog__link" href="#">Умные часы</a>
                             </li>
                         </ul>
-                        <ul class="catalog__list">
+                        <ul class="catalog__list header-menu">
                             <li class="catalog__item">
                                 <a class="catalog__link" href="#">Квадрокоптеры</a>
                             </li>
@@ -79,7 +80,7 @@
                     </div>
                 </li>
             </ul>
-            <ul class="nav__menu info-menu">
+            <ul class="nav__info-menu header-menu info-menu">
                 <li class="info-menu__item">
                     <a class="info-menu__link" href="#">Доставка</a>
                 </li>
