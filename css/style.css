@@ -263,8 +263,8 @@ img {
   content: "";
   position: absolute;
   width: 120%;
-  height: 100%;
-  top: 75%;
+  height: calc(100% + 30px);
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -286,10 +286,10 @@ img {
 
 .logo:hover,
 .logo:focus,
-.catalog__title:hover,
-.catalog__title:focus,
 .catalog__link:hover,
 .catalog__link:focus,
+.catalog__container:hover .catalog__title,
+.catalog__container:focus .catalog__title,
 .info-menu__link:hover,
 .info-menu__link:focus,
 .user-menu__item:hover,
@@ -298,9 +298,10 @@ img {
 }
 
 .logo:active,
-.catalog__title:active,
 .catalog__link:active,
+.catalog__container:active .catalog__title,
 .info-menu__link:active,
 .user-menu__item:active {
   opacity: 0.3;
 }
+
