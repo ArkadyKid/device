@@ -263,11 +263,10 @@ img {
   content: "";
   position: absolute;
   width: 120%;
-  height: calc(100% + 30px);
-  top: 0;
+  height: 100%;
+  top: 75%;
   left: 0;
   right: 0;
-  z-index: -1;
 }
 
 .info-menu {
