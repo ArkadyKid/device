@@ -88,6 +88,10 @@ img {
   margin-bottom: 19px;
 }
 
+.logo {
+  width: 165px;
+}
+
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -102,11 +106,20 @@ img {
   padding: 0;
   border: none;
   background-color: #f7e296;
+  opacity: 0.3;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
+  line-height: 2;
   letter-spacing: 0.2px;
-  color: #464646;
+}
+
+.search__input:hover {
+  opacity: 0.6;
+}
+
+.search__input:focus {
+  opacity: 1;
 }
 
 .search__button {
@@ -115,7 +128,7 @@ img {
   background-color: transparent;
   cursor: pointer;
   padding-right: 16px;
-  padding-top: 7px;
+  padding-top: 3px;
   padding-left: 3px;
 }
 
@@ -229,7 +242,7 @@ img {
 
 .catalog__title,
 .info-menu__link {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
@@ -269,4 +282,25 @@ img {
 
 .info-menu__item:last-child {
   margin-left: auto;
+}
+
+.logo:hover,
+.logo:focus,
+.catalog__title:hover,
+.catalog__title:focus,
+.catalog__link:hover,
+.catalog__link:focus,
+.info-menu__link:hover,
+.info-menu__link:focus,
+.user-menu__item:hover,
+.user-menu__item:focus {
+  opacity: 0.6;
+}
+
+.logo:active,
+.catalog__title:active,
+.catalog__link:active,
+.info-menu__link:active,
+.user-menu__item:active {
+  opacity: 0.3;
 }
