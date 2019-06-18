@@ -92,45 +92,57 @@ img {
   width: 165px;
 }
 
+.logo__link {
+  transition: 300ms ease-out;
+}
+
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
+  min-height: 49px;
   margin-bottom: 35px;
 }
 
 .search__form {
+  position: relative;
   display: flex;
-  min-height: 49px;
+  align-items: center;
+  height: 100%;
 }
 
 .search__input {
   padding: 5px;
+  padding-left: 38px;
   width: 341px;
+  height: 100%;
   border: none;
   border-bottom: 2px solid transparent;
   background-color: #f7e296;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 2;
   letter-spacing: 0.2px;
-  transition: 300ms ease-out;
 }
 
 .search__input:hover {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search__img {
+  position: absolute;
 }
 
 .search__input:focus {
-  opacity: 1;
+  color: #000000;
   border-bottom: 2px solid #000000;
 }
 
 .search__button {
   display: none;
   width: 85px;
-  min-height: 49px;
+  height: 100%;
   padding: 0;
   border: 2px solid #000000;
   background-color: #f7e296;
@@ -165,12 +177,16 @@ img {
 }
 
 .user-menu__list {
-  list-style: none;
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .user-menu__item {
+  display: flex;
+  align-items: center;
   margin-left: 41px;
 }
 
@@ -186,6 +202,7 @@ img {
   position: relative;
   text-decoration: none;
   color: #000000;
+  transition: 300ms ease-out;
 }
 
 .user-menu__link::before {
@@ -250,10 +267,13 @@ img {
   pointer-events: all;
 }
 
+.catalog__container {
+  display: flex;
+  align-items: center;
+}
+
 .catalog__img {
-  position: absolute;
-  top: 7px;
-  right: -27px;
+  margin-left: 12px;
   opacity: 0.3;
   transition: 300ms ease-out;
 }
@@ -272,6 +292,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+  transition: 300ms ease-out;
 }
 
 .catalog__link {
@@ -279,6 +300,7 @@ img {
   color: #000000;
   line-height: 36px;
   letter-spacing: 0.2px;
+  transition: 300ms ease-out;
 }
 
 .catalog__title::before {
