@@ -100,11 +100,14 @@ img {
 
 .search__form {
   display: flex;
+  min-height: 49px;
 }
 
 .search__input {
-  padding: 0;
+  padding: 5px;
+  width: 341px;
   border: none;
+  border-bottom: 2px solid transparent;
   background-color: #f7e296;
   opacity: 0.3;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -112,6 +115,7 @@ img {
   font-weight: 300;
   line-height: 2;
   letter-spacing: 0.2px;
+  transition: 300ms ease-out;
 }
 
 .search__input:hover {
@@ -120,16 +124,32 @@ img {
 
 .search__input:focus {
   opacity: 1;
+  border-bottom: 2px solid #000000;
 }
 
 .search__button {
+  display: none;
+  width: 85px;
+  min-height: 49px;
   padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  padding-right: 16px;
-  padding-top: 3px;
-  padding-left: 3px;
+  border: 2px solid #000000;
+  background-color: #f7e296;
+  transition: 300ms ease-out;
+}
+
+.search__button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search__button:active {
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search__input:focus + .search__button,
+.search__input:valid + .search__button {
+  display: block;
 }
 
 .header__user-block {
@@ -173,7 +193,7 @@ img {
   top: 0px;
   left: -30px;
   width: 35px;
-  height: 20px;
+  height: 30px;
   content: "";
 }
 
@@ -224,7 +244,8 @@ img {
   transition: 300ms ease-out;
 }
 
-.catalog__container:hover .catalog__wrapper {
+.catalog__container:hover .catalog__wrapper,
+.catalog__container:focus-within .catalog__wrapper {
   opacity: 1;
   pointer-events: all;
 }
@@ -233,6 +254,7 @@ img {
   position: absolute;
   top: 7px;
   right: -27px;
+  opacity: 0.3;
   transition: 300ms ease-out;
 }
 
@@ -259,7 +281,7 @@ img {
   letter-spacing: 0.2px;
 }
 
-.catalog__container::before {
+.catalog__title::before {
   content: "";
   position: absolute;
   width: 120%;
@@ -284,24 +306,27 @@ img {
   margin-left: auto;
 }
 
-.logo:hover,
-.logo:focus,
+.logo__link:hover,
+.logo__link:focus,
 .catalog__link:hover,
 .catalog__link:focus,
-.catalog__container:hover .catalog__title,
-.catalog__container:focus .catalog__title,
+.catalog__title:hover,
+.catalog__title:focus,
 .info-menu__link:hover,
 .info-menu__link:focus,
-.user-menu__item:hover,
-.user-menu__item:focus {
+.user-menu__link:hover,
+.user-menu__link:focus,
+.user-menu__link:hover .user-menu__img,
+.user-menu__link:focus .user-menu__img {
   opacity: 0.6;
 }
 
-.logo:active,
+.logo__link:active,
 .catalog__link:active,
-.catalog__container:active .catalog__title,
+.catalog__title:active,
 .info-menu__link:active,
-.user-menu__item:active {
+.user-menu__link:active,
+.user-menu__link:active .user-menu__img {
   opacity: 0.3;
 }
 
