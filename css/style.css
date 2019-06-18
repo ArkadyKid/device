@@ -62,7 +62,6 @@ img {
 .visually-hidden {
   position: absolute;
   clip: rect(1px 1px 1px 1px);
- /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0;
   border: 0;
@@ -85,7 +84,7 @@ img {
 }
 
 .header__logo {
-  margin-bottom: 19px;
+  margin-bottom: 8px;
 }
 
 .logo {
@@ -100,7 +99,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   min-height: 49px;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 }
 
 .search__form {
@@ -130,13 +129,13 @@ img {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search__img {
-  position: absolute;
-}
-
 .search__input:focus {
   color: #000000;
   border-bottom: 2px solid #000000;
+}
+
+.search__img {
+  position: absolute;
 }
 
 .search__button {
@@ -304,13 +303,13 @@ img {
 }
 
 .catalog__title::before {
-  content: "";
   position: absolute;
   width: 120%;
   height: calc(100% + 30px);
   top: 0;
   left: 0;
   right: 0;
+  content: "";
 }
 
 .info-menu {
@@ -351,4 +350,3 @@ img {
 .user-menu__link:active .user-menu__img {
   opacity: 0.3;
 }
-
