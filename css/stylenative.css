@@ -103,10 +103,15 @@ img {
 }
 
 .search__form {
-  position: relative;
   display: flex;
   align-items: center;
   height: 100%;
+}
+
+.search__label {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .search__input {
