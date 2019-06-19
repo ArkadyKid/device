@@ -3,7 +3,7 @@ body {
 }
 
 .header {
-  background-color: red;
+  background-color: green;
 }
 
 .header .logo {
@@ -11,5 +11,5 @@ body {
 }
 
 .header a {
-  color: green;
+  color: white;
 }
