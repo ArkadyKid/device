@@ -1,5 +1,5 @@
-$header-color: green;
-$bg-color: green;
+$header-color: red;
+$bg-color: brown;
 
 body {
   background-color: $bg-color;
@@ -7,13 +7,12 @@ body {
 .header {
   background-color: $header-color;
   display: flex;
-  justify-content: space-around;
 
   .logo {
     color: $bg-color;
   }
 
   a {
-    color: darkcyan;
+    color: green;
   }
 }
