@@ -1,0 +1,17 @@
+$header-color: #5b3a29;
+$bg-color: #ff4500;
+
+body {
+  background-color: $bg-color;
+}
+.header {
+  background-color: $header-color;
+
+  .logo {
+    color: $bg-color;
+  }
+
+  a {
+    color: green;
+  }
+}
