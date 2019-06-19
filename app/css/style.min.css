@@ -1,1 +1,1 @@
-.header,body{background-color:green}.header .logo{color:green}.header a{color:violet}
+.header,body{background-color:green}.header{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}.header .logo{color:green}.header a{color:red}

@@ -13,6 +13,7 @@ gulp.task('sass', function() {
     return gulp.src('app/sass/**/*.{sass,scss}')
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer(['last 15 versions', '> 1%'], { cascade: true }))
+    .pipe(cssNano())
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({stream: true}))
 });
