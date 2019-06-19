@@ -6,6 +6,7 @@ gulp.task('sass', function(){
     return gulp.src('app/sass/**/*.{sass,scss}')
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(gulp.dest('app/css'))
+        .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('browser-sync', function() {
