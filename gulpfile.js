@@ -1,7 +1,3 @@
-/* eslint-disable no-var */
-/* eslint-disable no-unused-vars */
-/* eslint-disable strict */
-
 'use strict';
 
 var gulp = require('gulp');
@@ -16,73 +12,88 @@ var cache = require('gulp-cache');
 var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
 
-gulp.task('sass', () => gulp.src('app/sass/style.{sass,scss}')
+gulp.task('sass', function() {
+  return gulp.src('app/sass/style.scss')
   .pipe(plumber())
-  .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+  .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
   .pipe(autoprefixer(['last 15 versions', '> 1%'], { cascade: true }))
   .pipe(cssMin())
-  .pipe(rename({ suffix: '.min' }))
+  .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest('app/css'))
-  .pipe(browserSync.reload({ stream: true })));
-
-gulp.task('autoprefixer', () => gulp.src('app/css/**/*.css')
-  .pipe(autoprefixer())
-  .pipe(rename({ suffix: '.pref' }))
-  .pipe(gulp.dest('app/css')));
-
-gulp.task('cssMin', () => gulp.src('app/css/**/*.css')
-  .pipe(cssMin())
-  .pipe(rename({ suffix: '.min' }))
-  .pipe(gulp.dest('app/css')));
-
-gulp.task('cssNative', () => gulp.src('app/sass/style.{sass,scss}')
-  .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
-  .pipe(gulp.dest('dist/css')));
-
-gulp.task('browserSync', () => {
-  browserSync({
-    server: {
-      baseDir: 'app',
-    },
-    notify: false,
-  });
+  .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('scripts', () => gulp.src('app/libs/**/*.js')
-  .pipe(browserSync.reload({ stream: true })));
+gulp.task('autoprefixer', function() {
+  return gulp.src('app/css/**/*.css')
+  .pipe(autoprefixer())
+  .pipe(rename({suffix: '.pref'}))
+  .pipe(gulp.dest('app/css'))
+});
 
-gulp.task('code', () => gulp.src('app/*.html')
-  .pipe(browserSync.reload({ stream: true })));
+gulp.task('cssMin', function() {
+  return gulp.src('app/css/**/*.css')
+  .pipe(cssMin())
+  .pipe(rename({suffix: '.min'}))
+  .pipe(gulp.dest('app/css'))
+});
 
-gulp.task('clean', async () => del.sync('dist'));
+gulp.task('cssNative', function() {
+  return gulp.src('app/sass/**/*.{sass,scss}')
+  .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+  .pipe(gulp.dest('dist/css'))
+});
 
-gulp.task('clear', callback => cache.clearAll());
+gulp.task('browserSync', function() {
+  browserSync({
+      server: {
+          baseDir: 'app'
+      },
+      notify: false
+  })
+});
 
-gulp.task('prebuild', async () => {
-  const buildCss = gulp.src('app/css/**/*')
+gulp.task('scripts', function() {
+  return gulp.src('app/libs/**/*.js')
+  .pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('code', function() {
+  return gulp.src('app/*.html')
+  .pipe(browserSync.reload({ stream: true }))
+});
+
+gulp.task('clean', async function() {
+  return del.sync('dist');
+});
+
+gulp.task('clear', function () {
+  return cache.clearAll();
+});
+
+gulp.task('prebuild', async function() {
+  gulp.src('app/css/**/*')
     .pipe(gulp.dest('dist/css'));
-
-  const buildFonts = gulp.src('app/fonts/**/*')
+  gulp.src('app/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'));
-
-  const buildJs = gulp.src('app/js/**/*.js')
+  gulp.src('app/js/**/*.js')
     .pipe(gulp.dest('dist/js'));
-
-  const buildHtml = gulp.src('app/*.html')
+  gulp.src('app/*.html')
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('img', () => gulp.src('app/img/**/*')
-  .pipe(cache(imagemin({
-    interlaced: true,
-    progressive: true,
-    svgoPlugins: [{ removeViewBox: false }],
-    use: [pngquant()],
+gulp.task('img', function() {
+  return gulp.src('app/img/**/*')
+  .pipe(cache (imagemin({
+      interlaced: true,
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngquant()]
   })))
-  .pipe(gulp.dest('dist/img')));
+  .pipe(gulp.dest('dist/img'));
+});
 
-gulp.task('watch', () => {
-  gulp.watch('app/sass/**/*.{sass,scss}', gulp.parallel('sass', 'cssNative'));
+gulp.task('watch', function() {
+  gulp.watch('app/sass/**/*.{sass,scss}', gulp.parallel('sass'));
   gulp.watch('app/*.html', gulp.parallel('code'));
   gulp.watch(['app/js/common.js', 'app/libs/**/*.js'], gulp.parallel('scripts'));
 });
