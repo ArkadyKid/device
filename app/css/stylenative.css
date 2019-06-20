@@ -76,7 +76,7 @@ img {
   width: 1160px;
   margin: 0 auto;
   margin-top: 21px;
-  background-image: linear-gradient(to bottom,#ffffff 19px, #f7e296 19px);
+  background-image: linear-gradient(to bottom, #ffffff 19px, #f7e296 19px);
 }
 
 .header__container {
@@ -163,8 +163,8 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.search__input:focus + .search__button,
-.search__input:valid + .search__button {
+.search__input:focus+.search__button,
+.search__input:valid+.search__button {
   display: block;
 }
 

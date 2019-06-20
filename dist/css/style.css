@@ -1,16 +1,89 @@
-body {
-  background-color: brown;
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/gilroyextrabold.woff2"), url("../fonts/gilroyextrabold.woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/gilroylight.woff2"), url("../fonts/gilroylight.woff");
+}
+
+@font-face {
+  font-family: "Opensans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff2"), url("../fonts/opensans.woff");
+}
+
+@font-face {
+  font-family: "Opensans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/opensanslight.woff2"), url("../fonts/opensanslight.woff");
+}
+
+.logo__link {
+  transition: 300ms ease-out;
 }
 
 .header {
-  background-color: red;
-  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 21px;
+  background-image: linear-gradient(to bottom, #ffffff 19px, #f7e296 19px);
 }
 
-.header .logo {
-  color: brown;
+.header__container {
+  padding-top: 0;
+  padding-right: 60px;
+  padding-bottom: 0;
+  padding-left: 60px;
 }
 
-.header a {
-  color: green;
+.header__logo {
+  margin-bottom: 8px;
+}
+
+.logo {
+  width: 165px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #464646;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }

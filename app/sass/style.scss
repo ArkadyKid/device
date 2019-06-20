@@ -1,18 +1,4 @@
-$header-color: red;
-$bg-color: brown;
-
-body {
-  background-color: $bg-color;
-}
-.header {
-  background-color: $header-color;
-  display: flex;
-
-  .logo {
-    color: $bg-color;
-  }
-
-  a {
-    color: green;
-  }
-}
+@import "normalize";
+@import "fonts";
+@import "global";
+@import "header";

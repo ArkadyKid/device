@@ -1,0 +1,107 @@
+$background: #f7e296;
+$transition: 300ms ease-out;
+
+%flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.header {
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 21px;
+  background-image: linear-gradient(to bottom, #ffffff 19px, #f7e296 19px);
+
+  &__container {
+    padding: {
+      top: 0;
+      right: 60px;
+      bottom: 0;
+      left: 60px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 8px;
+  }
+
+  &__wrapper {
+    @extend %flex;
+    min-height: 49px;
+    margin-bottom: 27px;
+  }
+}
+
+.logo {
+  width: 165px;
+
+  &__link {
+    transition: $transition;
+  }
+}
+
+.search {
+
+  &__form {
+    @extend %flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__label {
+    position: relative;
+    @extend %flex;
+    align-items: center;
+  }
+
+  &__input {
+    padding: 5px;
+    padding-left: 38px;
+    width: 341px;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background-color: $background;
+    color: rgba(0, 0, 0, 0.3);
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: 0.2px;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:focus {
+      color: #000000;
+      border-bottom: 2px solid #000000;
+    }
+
+    &:focus+.search__button,
+    &:valid+.search__button {
+      display: block;
+    }
+  }
+
+  &__button {
+    display: none;
+    width: 85px;
+    height: 100%;
+    padding: 0;
+    border: 2px solid #000000;
+    background-color: $background;
+    transition: $transition;
+
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    &:active {
+      background-color: #000000;
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}

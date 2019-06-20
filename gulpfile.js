@@ -12,7 +12,7 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function() {
-  return gulp.src('app/sass/**/*.{sass,scss}')
+  return gulp.src('app/sass/style.scss')
   .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
   .pipe(autoprefixer(['last 15 versions', '> 1%'], { cascade: true }))
   .pipe(cssMin())
@@ -22,7 +22,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('autoprefixer', function() {
-  return gulp.src('app/css/stylenative.css')
+  return gulp.src('app/css/**/*.css')
   .pipe(autoprefixer())
   .pipe(rename({suffix: '.pref'}))
   .pipe(gulp.dest('app/css'))
@@ -35,13 +35,13 @@ gulp.task('cssMin', function() {
   .pipe(gulp.dest('app/css'))
 });
 
-gulp.task('nativecss', function() {
+gulp.task('cssNative', function() {
   return gulp.src('app/sass/**/*.{sass,scss}')
   .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
   .pipe(gulp.dest('dist/css'))
 });
 
-gulp.task('browser-sync', function() {
+gulp.task('browserSync', function() {
   browserSync({
       server: {
           baseDir: 'app'
@@ -51,7 +51,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(['app/js/common.js', 'app/libs/**/*.js'])
+  return gulp.src('app/libs/**/*.js')
   .pipe(browserSync.reload({stream: true}))
 });
 
@@ -101,5 +101,5 @@ gulp.task('watch', function() {
   gulp.watch(['app/js/common.js', 'app/libs/**/*.js'], gulp.parallel('scripts'));
 });
 
-gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
-gulp.task('build', gulp.parallel('prebuild', 'clean', 'nativecss', 'img', 'sass'));
+gulp.task('default', gulp.parallel('sass', 'browserSync', 'watch'));
+gulp.task('build', gulp.parallel('prebuild', 'clean', 'cssNative', 'img', 'sass'));
