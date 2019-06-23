@@ -13,7 +13,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var plumber = require('gulp-plumber');
 
 gulp.task('sass', function () {
-  return gulp.src('app/sass/style.scss')
+  return gulp.src('app/sass/main.scss')
     .pipe(plumber())
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer(['last 15 versions', '> 1%'], {cascade: true}))
@@ -38,8 +38,9 @@ gulp.task('cssMin', function () {
 });
 
 gulp.task('cssNative', function () {
-  return gulp.src('app/sass/**/*.{sass,scss}')
+  return gulp.src('app/sass/**/main.{sass,scss}')
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(rename({suffix: '.nat'}))
     .pipe(gulp.dest('dist/css'))
 });
 

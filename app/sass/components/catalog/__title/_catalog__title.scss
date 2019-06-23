@@ -1,0 +1,25 @@
+.catalog__title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  @include font-params(18px, 800, 24px, 0.15em, $color-black);
+  text-transform: uppercase;
+  transition: $transition;
+}
+
+.catalog__title::before {
+  position: absolute;
+  width: 120%;
+  height: calc(100% + 30px);
+  top: 0;
+  left: 0;
+  right: 0;
+  content: "";
+}
+
+.catalog__title:hover,
+.catalog__title:focus {
+  opacity: 0.3;
+}
+
+.catalog__title:active {
+  opacity: 0.6;
+}

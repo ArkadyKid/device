@@ -1,0 +1,15 @@
+.info-menu__link {
+  font-family: "Gilroy", "Arial", sans-serif;
+  @include font-params(18px, 800, 24px, 0.15em, $color-black);
+  text-transform: uppercase;
+  transition: $transition;
+}
+
+.info-menu__link:hover,
+.info-menu__link:focus {
+  opacity: 0.6;
+}
+
+.info-menu__link:active {
+  opacity: 0.3;
+}

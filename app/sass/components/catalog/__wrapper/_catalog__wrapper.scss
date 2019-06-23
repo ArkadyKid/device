@@ -1,0 +1,18 @@
+.catalog__wrapper {
+  position: absolute;
+  left: -55px;
+  top: calc(100% + 18px);
+  @include flex;
+  padding: 0 60px;
+  width: 1160px;
+  pointer-events: none;
+  opacity: 0;
+  background-color: $color-sweetcorn;
+  transition: $transition;
+}
+
+.catalog__container:hover .catalog__wrapper,
+.catalog__container:focus-within .catalog__wrapper {
+  opacity: 1;
+  pointer-events: all;
+}

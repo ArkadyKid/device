@@ -1,0 +1,20 @@
+.search__input {
+  padding: 5px 5px 5px 38px;
+  min-width: 341px;
+  height: 100%;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: $color-sweetcorn;
+  opacity: 0.3;
+  font-family: "OpenSans", "Arial", sans-serif;
+  @include font-params();
+}
+
+.search__input:hover {
+  opacity: 0.6;
+}
+
+.search__input:focus {
+  color: $color-black;
+  border-bottom: 2px solid $color-black;
+}

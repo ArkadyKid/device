@@ -1,0 +1,12 @@
+.logo__link {
+  transition: $transition;
+}
+
+.logo__link:hover,
+.logo__link:focus {
+  opacity: 0.6;
+}
+
+.logo__link:active {
+  opacity: 0.3;
+}

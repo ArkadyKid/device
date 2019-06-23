@@ -1,0 +1,9 @@
+.catalog__container {
+  @include flex;
+  align-items: center;
+  list-style: none;
+}
+
+.catalog__container:hover .catalog__img {
+  transform: rotate(90deg);
+}
