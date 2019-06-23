@@ -252,11 +252,14 @@ a {
 }
 
 .header {
-  width: 1180px;
+  width: 1160px;
   margin: 0 auto;
-  padding: 0 10px;
   margin-top: 21px;
   background-image: linear-gradient(to bottom, #ffffff 19px, #f7e296 19px);
+}
+
+.header__container {
+  padding: 0 60px;
 }
 
 .header__logo {
@@ -275,10 +278,14 @@ a {
   width: 48%;
 }
 
+.header__nav {
+  padding: 0 57px 47px 55px;
+}
+
 .nav {
   display: flex;
   flex-wrap: wrap;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .nav__catalog-menu {
@@ -308,7 +315,7 @@ a {
   height: 100%;
   padding: 0;
   border: 2px solid #000000;
-  background-color: #f7e184;
+  background-color: transparent;
   transition: 300ms ease-out;
 }
 
@@ -344,18 +351,18 @@ a {
   height: 100%;
   border: none;
   border-bottom: 2px solid transparent;
-  background-color: #f7e184;
-  opacity: 0.3;
+  background-color: transparent;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 2;
   letter-spacing: 0.01em;
   color: #464646;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search__input:hover {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search__input:focus {
@@ -462,7 +469,7 @@ a {
   margin-right: 58px;
 }
 
-.catalog-item {
+.catalog__item {
   list-style: none;
 }
 
@@ -528,7 +535,7 @@ a {
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.2em;
   color: #000000;
   text-transform: uppercase;
   transition: 300ms ease-out;
@@ -551,4 +558,47 @@ a {
 
 .catalog__title:active {
   opacity: 0.6;
+}
+
+.info-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  width: 48%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.info-menu__link {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  color: #000000;
+  text-transform: uppercase;
+  transition: 300ms ease-out;
+}
+
+.info-menu__link:hover,
+.info-menu__link:focus {
+  opacity: 0.6;
+}
+
+.info-menu__link:active {
+  opacity: 0.3;
+}
+
+.info-menu__item {
+  list-style: none;
+}
+
+.info-menu__item:first-child {
+  margin-right: 34px;
+}
+
+.info-menu__item:last-child {
+  margin-left: auto;
 }
