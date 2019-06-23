@@ -1,6 +1,6 @@
 .catalog__title {
   font-family: "Gilroy", "Arial", sans-serif;
-  @include font-params(18px, 800, 24px, 0.15em, $color-black);
+  @include font-params(18px, 800, 24px, 0.2em, $color-black);
   text-transform: uppercase;
   transition: $transition;
 }

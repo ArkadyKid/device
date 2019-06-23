@@ -4,14 +4,14 @@
   height: 100%;
   border: none;
   border-bottom: 2px solid transparent;
-  background-color: $color-sweetcorn;
-  opacity: 0.3;
+  background-color: transparent;
   font-family: "OpenSans", "Arial", sans-serif;
   @include font-params();
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search__input:hover {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search__input:focus {
