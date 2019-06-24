@@ -1,0 +1,6 @@
+.slider-product__info {
+  position: relative;
+  @include flex;
+  flex-direction: column;
+  width: 48%;
+}

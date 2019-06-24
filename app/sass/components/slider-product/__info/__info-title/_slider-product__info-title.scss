@@ -1,0 +1,8 @@
+.slider-product__info-title {
+  @include reset-indents;
+  @include font-params (47px, 800, 1.19, 0em, $color-black);
+  font-family: "Gilroy", "Arial", sans-serif;
+  width: 80%;
+  margin-top: 82px;
+  margin-bottom: 20px;
+}

@@ -1,6 +1,6 @@
 .header {
   @include container();
   margin-top: 21px;
-  background-image: linear-gradient(to bottom, #ffffff 19px, #f7e296 19px);
+  background-image: linear-gradient(to bottom, $color-white 19px, $color-sweetcorn 19px);
 }
 

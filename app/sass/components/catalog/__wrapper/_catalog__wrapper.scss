@@ -2,6 +2,7 @@
   position: absolute;
   left: -55px;
   top: calc(100% + 18px);
+  z-index: 1;
   @include flex;
   padding: 0 60px;
   width: 1160px;
