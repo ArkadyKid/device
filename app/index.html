@@ -136,7 +136,13 @@
 <main class="main">
     <section class="main__slider-products slider-products">
         <div class="slider-products__inner"></div>
-        <section class="slider-products__product slider-product">
+        <input class="slider-product__radio slider-product__radio--selfie visually-hidden" type="radio"
+               id="slider-first" name="slider-product" checked>
+        <input class="slider-product__radio slider-product__radio--watch visually-hidden" type="radio"
+               id="slider-second" name="slider-product">
+        <input class="slider-product__radio slider-product__radio--quadro visually-hidden" type="radio"
+               id="slider-third" name="slider-product">
+        <section class="slider-products__product slider-products__product--selfie slider-product">
             <div class="slider-product__image-wrapper">
                 <img class="slider-product__image" src="img/selfie.png" alt="селфи палка" width="384" height="486">
             </div>
@@ -149,21 +155,97 @@
                     Самая длинная палка для селфи доступна в нашем магазине. Восемь&nbsp(Восемь, Карл!) метров длиной и
                     весом всего 5 килограмм.
                 </p>
-                <a class="slider-product__info-button" href="#">Подробнее</a>
-                <table class="slider-product__info-table">
-                    <tr>
-                        <td>8.5 м</td>
-                        <td>5 кг</td>
-                        <td>Карбон</td>
+                <div class="slider-product__wrapper">
+                    <a class="slider-product__button button" href="#">Подробнее</a>
+                    <div class="slider-product__paginator">
+                        <label class="slider-product__paginator-label slider-product__paginator-label--selfie"
+                               for="slider-first"></label>
+                        <label class="slider-product__paginator-label slider-product__paginator-label--watch"
+                               for="slider-second"></label>
+                        <label class="slider-product__paginator-label slider-product__paginator-label--quadro"
+                               for="slider-third"></label>
+                    </div>
+                </div>
+                <table class="slider-product__table">
+                    <tr class="slider-product__table-row">
+                        <td class="slider-product__table-data">8.5 м</td>
+                        <td class="slider-product__table-data">5 кг</td>
+                        <td class="slider-product__table-data">Карбон</td>
                     </tr>
-                    <tr>
-                        <th>Длина палки</th>
-                        <th>Вес палки</th>
-                        <th>Материал</th>
+                    <tr class="slider-product__table-row">
+                        <th class="slider-product__table-head">Длина палки</th>
+                        <th class="slider-product__table-head">Вес палки</th>
+                        <th class="slider-product__table-head">Материал</th>
                     </tr>
                 </table>
             </div>
         </section>
+        <!--        <section class="slider-products__product slider-products__product&#45;&#45;watch slider-product">-->
+        <!--            <div class="slider-product__image-wrapper">-->
+        <!--                <img class="slider-product__image" src="img/selfie.png" alt="селфи палка" width="384" height="486">-->
+        <!--            </div>-->
+        <!--            <div class="slider-product__info">-->
+        <!--                <span class="slider-product__info-number">01</span>-->
+        <!--                <h3 class="slider-product__info-title">-->
+        <!--                    Делай селфи, как&nbspБен Стиллер!-->
+        <!--                </h3>-->
+        <!--                <p class="slider-product__info-text">-->
+        <!--                    Самая длинная палка для селфи доступна в нашем магазине. Восемь&nbsp(Восемь, Карл!) метров длиной и-->
+        <!--                    весом всего 5 килограмм.-->
+        <!--                </p>-->
+        <!--                <a class="slider-product__button button" href="#">Подробнее</a>-->
+        <!--                <div class="slider-products__paginator">-->
+        <!--                    <label class="slider-product__label slider-product__label&#45;&#45;selfie" for="slider-first"></label>-->
+        <!--                    <label class="slider-product__label slider-product__label&#45;&#45;watch" for="slider-second"></label>-->
+        <!--                    <label class="slider-product__label slider-product__label&#45;&#45;quadro" for="slider-third"></label>-->
+        <!--                </div>-->
+        <!--                <table class="slider-product__table">-->
+        <!--                    <tr class="slider-product__table-row">-->
+        <!--                        <td class="slider-product__table-data">8.5 м</td>-->
+        <!--                        <td class="slider-product__table-data">5 кг</td>-->
+        <!--                        <td class="slider-product__table-data">Карбон</td>-->
+        <!--                    </tr>-->
+        <!--                    <tr class="slider-product__table-row">-->
+        <!--                        <th class="slider-product__table-head">Длина палки</th>-->
+        <!--                        <th class="slider-product__table-head">Вес палки</th>-->
+        <!--                        <th class="slider-product__table-head">Материал</th>-->
+        <!--                    </tr>-->
+        <!--                </table>-->
+        <!--            </div>-->
+        <!--        </section>-->
+        <!--        <section class="slider-products__product slider-products__product&#45;&#45;quadro slider-product">-->
+        <!--            <div class="slider-product__image-wrapper">-->
+        <!--                <img class="slider-product__image" src="img/selfie.png" alt="селфи палка" width="384" height="486">-->
+        <!--            </div>-->
+        <!--            <div class="slider-product__info">-->
+        <!--                <span class="slider-product__info-number">01</span>-->
+        <!--                <h3 class="slider-product__info-title">-->
+        <!--                    Делай селфи, как&nbspБен Стиллер!-->
+        <!--                </h3>-->
+        <!--                <p class="slider-product__info-text">-->
+        <!--                    Самая длинная палка для селфи доступна в нашем магазине. Восемь&nbsp(Восемь, Карл!) метров длиной и-->
+        <!--                    весом всего 5 килограмм.-->
+        <!--                </p>-->
+        <!--                <a class="slider-product__button button" href="#">Подробнее</a>-->
+        <!--                <div class="slider-products__paginator">-->
+        <!--                    <label class="slider-product__label slider-product__label&#45;&#45;selfie" for="slider-first"></label>-->
+        <!--                    <label class="slider-product__label slider-product__label&#45;&#45;watch" for="slider-second"></label>-->
+        <!--                    <label class="slider-product__label slider-product__label&#45;&#45;quadro" for="slider-third"></label>-->
+        <!--                </div>-->
+        <!--                <table class="slider-product__table">-->
+        <!--                    <tr class="slider-product__table-row">-->
+        <!--                        <td class="slider-product__table-data">8.5 м</td>-->
+        <!--                        <td class="slider-product__table-data">5 кг</td>-->
+        <!--                        <td class="slider-product__table-data">Карбон</td>-->
+        <!--                    </tr>-->
+        <!--                    <tr class="slider-product__table-row">-->
+        <!--                        <th class="slider-product__table-head">Длина палки</th>-->
+        <!--                        <th class="slider-product__table-head">Вес палки</th>-->
+        <!--                        <th class="slider-product__table-head">Материал</th>-->
+        <!--                    </tr>-->
+        <!--                </table>-->
+        <!--            </div>-->
+        <!--        </section>-->
     </section>
     <section class="main__categories categories"></section>
     <section class="main__slider-advantage slider-advantage"></section>

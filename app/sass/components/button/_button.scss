@@ -1,0 +1,21 @@
+.button {
+  @include flex;
+  justify-content: center;
+  align-items: center;
+  @include font-params(18px, 800, 1.33, 0.2em, $color-black);
+  font-family: "Gilroy", "Arial", sans-serif;
+  background-image: linear-gradient($color-white 30%, $color-supernova 30%, $color-supernova 60%, $color-white 60%);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: top;
+}
+
+.button:hover,
+.button:focus {
+  background-image: none;
+  background-color: $color-supernova;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}

@@ -2,5 +2,6 @@
   position: relative;
   @include flex;
   flex-direction: column;
-  width: 48%;
+  width: calc(100% / 2 - 20px);
+  padding-right: 60px;
 }

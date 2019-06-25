@@ -1,0 +1,9 @@
+.slider-product__table-head {
+  @include font-params(13px, 300, 1.54, 0, $color-tundora);
+  text-align: left;
+  padding: 0;
+}
+
+.slider-product__table-head:nth-child(2) {
+  padding-left: 2%;
+}
