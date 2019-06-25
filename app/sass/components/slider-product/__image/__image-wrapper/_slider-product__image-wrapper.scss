@@ -1,6 +1,6 @@
 .slider-product__image-wrapper {
   @include flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: calc(100% / 2 - 15px);
 }
