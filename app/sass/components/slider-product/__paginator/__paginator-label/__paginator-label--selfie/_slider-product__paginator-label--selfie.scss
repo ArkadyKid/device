@@ -1,0 +1,3 @@
+.slider-product__radio--selfie:checked ~ .slider-product--selfie .slider-product__paginator-label--selfie::after {
+  border: 1px solid $color-black;
+}

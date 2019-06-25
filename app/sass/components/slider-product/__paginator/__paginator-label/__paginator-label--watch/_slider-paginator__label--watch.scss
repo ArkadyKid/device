@@ -1,0 +1,3 @@
+.slider-product__radio--watch:checked ~ .slider-product--watch .slider-product__paginator-label--watch::after {
+  border: 1px solid $color-black;
+}
