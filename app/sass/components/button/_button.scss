@@ -13,9 +13,7 @@
 
 .button:hover,
 .button:focus {
-  background-image: none;
-  background-color: $color-supernova;
-}
+  background-image: linear-gradient($color-supernova);
 
 .button:active {
   color: rgba(0, 0, 0, 0.3);
