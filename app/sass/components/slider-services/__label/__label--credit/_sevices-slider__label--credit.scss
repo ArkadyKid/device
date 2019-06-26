@@ -1,0 +1,9 @@
+.slider-services__input--credit:checked ~ .slider-services__menu .slider-services__label--credit {
+  background-color: $color-black;
+  background-image: none;
+  color: $color-main;
+}
+
+.slider-services__input--credit:checked ~ .slider-services__menu .slider-services__label--credit::before {
+  background-color: $color-black;
+}

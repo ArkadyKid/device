@@ -1,0 +1,9 @@
+.slider-services__input--delivery:checked ~ .slider-services__menu .slider-services__label--delivery {
+  background-color: $color-black;
+  background-image: none;
+  color: $color-main;
+}
+
+.slider-services__input--delivery:checked ~ .slider-services__menu .slider-services__label--delivery::before {
+  background-color: $color-black;
+}

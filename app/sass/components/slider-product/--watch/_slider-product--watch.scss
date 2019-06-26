@@ -1,4 +1,4 @@
-.slider-product__radio--watch ~ .slider-product--watch {
+.slider-product__radio--watch:checked ~ .slider-product--watch {
   @include flex;
 }
 

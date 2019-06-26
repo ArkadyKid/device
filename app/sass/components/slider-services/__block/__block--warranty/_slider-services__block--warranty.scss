@@ -1,0 +1,9 @@
+.slider-services__input--delivery:checked ~ .slider-services__block--warranty,
+.slider-services__input--credit:checked ~ .slider-services__block--warranty {
+  display: none;
+}
+
+.slider-services__input--warranty:checked ~ .slider-services__block--warranty {
+  @include flex;
+  background-image: url(../img/warranty.svg);
+}

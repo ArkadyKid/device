@@ -1,4 +1,5 @@
 .slider-product__wrapper {
   @include flex;
   justify-content: space-between;
+  margin-bottom: 45px;
 }

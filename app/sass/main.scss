@@ -9,9 +9,6 @@
 
 @import "base/base";
 
-@import "layout/nav/index";
-@import "layout/header/index";
-
 @import "components/logo/index";
 @import "components/search/index";
 @import "components/user-menu/index";
@@ -20,4 +17,11 @@
 @import "components/button/index";
 @import "components/slider-products/index";
 @import "components/slider-product/index";
+@import "components/categories/index";
+@import "components/slider-services/index";
+@import "components/manufacturers/index";
+
+@import "layout/nav/index";
+@import "layout/header/index";
+@import "layout/main/index";
 

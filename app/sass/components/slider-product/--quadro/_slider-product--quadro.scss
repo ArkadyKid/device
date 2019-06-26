@@ -1,4 +1,4 @@
-.slider-product__radio--quadro ~ .slider-product--quadro {
+.slider-product__radio--quadro:checked ~ .slider-product--quadro {
   @include flex;
 }
 

@@ -1,0 +1,9 @@
+.slider-services__input--warranty:checked ~ .slider-services__menu .slider-services__label--warranty {
+  background-color: $color-black;
+  background-image: none;
+  color: $color-main;
+}
+
+.slider-services__input--warranty:checked ~ .slider-services__menu .slider-services__label--warranty::before {
+  background-color: $color-black;
+}
