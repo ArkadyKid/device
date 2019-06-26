@@ -5,7 +5,7 @@
   padding: 10px 0;
   @include font-params(18px, 800, 1.33, 0.2em, $color-black);
   font-family: "Gilroy", "Arial", sans-serif;
-  background-image: linear-gradient(to bottom, $color-white 37%, $color-supernova 37%, $color-supernova 55%, $color-white 55%);
+  background-image: linear-gradient(to bottom, $color-white 45%, $color-supernova 45%, $color-supernova 55%, $color-white 55%);
   text-transform: uppercase;
   transition: $transition;
 }
@@ -18,3 +18,4 @@
 .button:active {
   color: rgba(0, 0, 0, 0.3);
 }
+

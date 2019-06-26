@@ -5,7 +5,8 @@
   transition: $transition;
 }
 
-.manufacturers__image:hover {
+.manufacturers__image:hover,
+.manufacturers__link:focus .manufacturers__image{
   opacity: 1;
   filter: grayscale(0);
 }
