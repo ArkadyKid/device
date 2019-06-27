@@ -1,0 +1,13 @@
+.footer-middle__menu-link {
+  @include font-params(18px, 800, unset, 0.2em, $color-white);
+  text-transform: uppercase;
+}
+
+.footer-middle__menu-link:hover,
+.footer-middle__menu-link:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-middle__menu-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}

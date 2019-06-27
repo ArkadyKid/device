@@ -1,34 +1,14 @@
 .slider-services__label {
-  position: relative;
-  @include flex;
-  justify-content: center;
-  align-items: center;
   width: 160px;
-  padding: 9px 0;
-  @include font-params(18px, 800, 1.33, 0.2em, $color-black);
-  font-family: "Gilroy", "Arial", sans-serif;
-  background-image: linear-gradient(to bottom, $color-mercury 45%, $color-supernova 45%, $color-supernova 55%, $color-mercury 55%);
-  text-transform: uppercase;
-  cursor: pointer;
 }
 
-.slider-services__item:first-child .slider-services__label {
-  background-image: linear-gradient(to bottom, $color-white 45%, $color-supernova 45%, $color-supernova 55%, $color-mercury 55%);
-}
-
-.slider-services__item:first-child .slider-services__label:hover,
-.slider-services__label:hover {
-  background-image: linear-gradient($color-supernova);
-}
-
-.slider-services__label::before {
+.slider-services__label::after {
   content: '';
   position: absolute;
   left: 100%;
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: transparent;
   overflow: hidden;
 }
 
