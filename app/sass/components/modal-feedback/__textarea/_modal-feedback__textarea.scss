@@ -4,5 +4,5 @@
   border: none;
   resize: vertical;
   @include font-params(14px, 400, 1.29, normal, $color-black);
-  background-color: $color-mercury;
+  background-color: tint($color-mercury, 50%);
 }

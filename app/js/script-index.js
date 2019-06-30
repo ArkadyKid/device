@@ -4,8 +4,8 @@
   var modalShowClass = 'modal--show';
   var overflowBodyClass = 'body--overflow';
   var modalErrorClass = 'modal-feedback__wrapper--error';
-  var nameStorage = '';
-  var emailStorage = '';
+  var nameStorage;
+  var emailStorage;
 
   var isStorageSupport = true;
 
@@ -58,7 +58,7 @@
   var closeModal = function (evt) {
     evt.preventDefault();
     modalMapElement.classList.remove(modalShowClass);
-    modalFeedbackElement.classList.remove(modalShowClass)
+    modalFeedbackElement.classList.remove(modalShowClass);
     body.classList.remove(overflowBodyClass);
   };
 
