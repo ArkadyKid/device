@@ -1,0 +1,9 @@
+.categories__link {
+  display: block;
+  @include font-params(18px, 800, 1.33, 0.01em, $color-black);
+  font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.categories__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}

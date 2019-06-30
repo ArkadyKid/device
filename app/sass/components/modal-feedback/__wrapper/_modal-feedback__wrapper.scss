@@ -1,0 +1,6 @@
+.modal-feedback__wrapper {
+  @include reset-indents();
+  border: none;
+  padding: 124px 100px 90px;
+  background-color: $color-white;
+}

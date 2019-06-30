@@ -1,0 +1,8 @@
+.modal-feedback__input {
+  border: none;
+  padding: 16px 15px;
+  margin-top: 10px;
+  min-width: 360px;
+  @include font-params(14px, 400, 1.29, normal, $color-black);
+  background-color: $color-mercury;
+}

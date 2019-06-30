@@ -3,6 +3,7 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "abstracts/fonts";
+@import "abstracts/animations";
 
 @import "vendors/normalize";
 @import "vendors/vissually-hidden";
@@ -26,8 +27,12 @@
 @import "components/footer-user/index";
 @import "components/footer-middle/index";
 @import "components/bottom/index";
+@import "components/modal-map/index";
+@import "components/modal/index";
+@import "components/modal-feedback/index";
 
 @import "layout/nav/index";
 @import "layout/header/index";
 @import "layout/main/index";
 @import "layout/footer/index";
+@import "layout/body/index";

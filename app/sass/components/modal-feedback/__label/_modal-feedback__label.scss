@@ -1,0 +1,11 @@
+.modal-feedback__label {
+  @include flex();
+  flex-direction: column;
+  @include font-params(18px, 800, 1.33, none, $color-black);
+  font-family: "Gilroy", "Arial", sans-serif;
+  margin-right: 40px;
+}
+
+.modal-feedback__label:last-child {
+  margin-right: 0;
+}

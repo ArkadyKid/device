@@ -1,0 +1,16 @@
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  opacity: 0.5;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+  opacity: 1;
+}
+
+.modal__close:active {
+  opacity: 0.3;
+}

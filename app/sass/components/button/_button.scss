@@ -4,9 +4,11 @@
   justify-content: center;
   align-items: center;
   padding: 10px 0;
+  border: none;
   @include font-params(18px, 800, 1.33, 0.2em, $color-black);
   font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
+  background-color: transparent;
   cursor: pointer;
 }
 

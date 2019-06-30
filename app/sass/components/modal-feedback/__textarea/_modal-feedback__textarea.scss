@@ -1,0 +1,8 @@
+.modal-feedback__textarea {
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  resize: vertical;
+  @include font-params(14px, 400, 1.29, normal, $color-black);
+  background-color: $color-mercury;
+}
