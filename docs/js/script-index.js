@@ -102,4 +102,46 @@
     })
   });
 
+
+  var sliderNoneID = 'slider-none';
+  var sliderLabelDelivery = 'slider-label--delivery';
+  var sliderShowDeliveryID = 'slider-show--delivery';
+  var sliderShowWarrantyID = 'slider-show--warranty';
+  var sliderShowCreditID = 'slider-show--credit';
+  var sliderLabelElement = document.querySelectorAll('.slider-services__label');
+  var sliderLabelArray = Array.prototype.slice.call(sliderLabelElement);
+  var sliderDeliveryLabelElement = document.querySelector('.slider-services__label--delivery');
+  var sliderWarrantyLabelElement = document.querySelector('.slider-services__label--warranty');
+  var sliderCreditLabelElement = document.querySelector('.slider-services__label--credit');
+  var sliderDeliveryBlockElement = document.querySelector('.slider-services__block--delivery');
+  var sliderWarrantyBlockElement = document.querySelector('.slider-services__block--warranty');
+  var sliderCreditBlockElement = document.querySelector('.slider-services__block--credit');
+
+  var sliderHoverClass = 'slider-services__label--hover';
+
+  sliderLabelArray.forEach(function (element) {
+    element.addEventListener('mouseenter', function (event) {
+      if (event.target === sliderDeliveryLabelElement) {
+        sliderDeliveryLabelElement.removeAttribute('id');
+        sliderDeliveryBlockElement.id = sliderShowDeliveryID;
+        sliderWarrantyBlockElement.id = sliderNoneID;
+        sliderCreditBlockElement.id = sliderNoneID;
+      }
+      if (event.target === sliderWarrantyLabelElement) {
+        sliderDeliveryLabelElement.id = sliderLabelDelivery;
+        sliderDeliveryLabelElement.id = sliderLabelDelivery;
+        sliderDeliveryBlockElement.id = sliderNoneID;
+        sliderWarrantyBlockElement.id = sliderShowWarrantyID;
+        sliderCreditBlockElement.id = sliderNoneID;
+      }
+      if (event.target === sliderCreditLabelElement) {
+        sliderDeliveryLabelElement.id = sliderLabelDelivery;
+        sliderDeliveryBlockElement.id = sliderNoneID;
+        sliderWarrantyBlockElement.id = sliderNoneID;
+        sliderCreditBlockElement.id = sliderShowCreditID;
+      }
+    });
+
+  });
+
 }());

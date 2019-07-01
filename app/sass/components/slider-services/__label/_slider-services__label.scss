@@ -12,3 +12,20 @@
   overflow: hidden;
 }
 
+.slider-services__label:hover {
+  background-color: $color-black;
+  color: $color-main;
+}
+
+.slider-services__label:hover::after {
+  background-color: $color-black;
+}
+
+.slider-services__label--hover {
+  background-color: $color-black;
+  color: $color-main;
+}
+
+.slider-services__label--hover::after {
+  background-color: $color-black;
+}

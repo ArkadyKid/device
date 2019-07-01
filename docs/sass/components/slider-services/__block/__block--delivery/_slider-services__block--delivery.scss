@@ -8,3 +8,7 @@
   background-image: url(../img/delivery.svg);
 }
 
+#slider-show--delivery {
+  @include flex;
+  background-image: url(../img/delivery.svg);
+}

@@ -7,7 +7,9 @@
   border: none;
   @include font-params(18px, 800, 1.33, 0.2em, $color-black);
   font-family: "Gilroy", "Arial", sans-serif;
+  text-align: center;
   text-transform: uppercase;
+  word-break: break-word;
   background-color: transparent;
   cursor: pointer;
 }

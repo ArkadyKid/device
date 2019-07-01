@@ -1,7 +1,7 @@
 .modal-feedback__label {
   @include flex();
   flex-direction: column;
-  @include font-params(18px, 800, 1.33, none, $color-black);
+  @include font-params(18px, 800, 1.33, normal, $color-black);
   font-family: "Gilroy", "Arial", sans-serif;
   margin-right: 40px;
 }
