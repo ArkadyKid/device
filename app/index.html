@@ -273,7 +273,7 @@
                 </table>
             </div>
         </article>
-        <article class="slider-products__product slider-product slider-product--quadro ">
+        <article class="slider-products__product slider-product slider-product--quadro">
             <h3 class="slider-product__title visually-hidden">
                 Квадрокоптер
             </h3>
@@ -577,8 +577,10 @@
             </p>
             <a class="about__contacts-link" target="_blank" rel="noopener"
                href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687034,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618?hl=ru">
-                <img class="about__contacts-map" src="img/map.png" alt="г. Москва, уль Строителей, 15" width="560"
-                     height="222">
+                <p class="about__contacts-wrapper">
+                    <img class="about__contacts-map" src="img/map.png" alt="г. Москва, уль Строителей, 15" width="560"
+                         height="222">
+                </p>
                 г. Москва, ул. Строителей, 15
             </a>
             <a class="about__contacts-button button" href="#">
@@ -724,7 +726,7 @@
         </div>
     </div>
 </footer>
-<section class="modal-map modal ">
+<section class="modal-map modal">
     <h3 class="modal-map__title modal__title visually-hidden">
         Карта
     </h3>
@@ -738,8 +740,8 @@
         </a>
         <img class="modal-map__img" src="img/map-big.png" alt="г. Москва, ул. Строителей, 15" width="960" height="559">
         <iframe class="modal-map__iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1431607626064!2d37.530143711451124!3d55.686498754267845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1561900912247!5m2!1sru!2sru"
-            width="960" height="559" style="border:0" allowfullscreen></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1431607626064!2d37.530143711451124!3d55.686498754267845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1561900912247!5m2!1sru!2sru"
+                width="960" height="559" style="border:0" allowfullscreen></iframe>
     </div>
 </section>
 <section class="modal-feedback modal">
@@ -758,11 +760,12 @@
             <div class="modal-feedback__inputs">
                 <label class="modal-feedback__label" for="name">
                     Ваше имя:
-                    <input class="modal-feedback__input" id="name" type="text" placeholder="Имя Фамилия">
+                    <input class="modal-feedback__input" id="name" type="text" placeholder="Имя Фамилия" name="name">
                 </label>
                 <label class="modal-feedback__label" for="email">
                     Ваш e-mail:
-                    <input class="modal-feedback__input" id="email" type="email" placeholder="email@example.com">
+                    <input class="modal-feedback__input" id="email" type="email" placeholder="email@example.com"
+                           name="email">
                 </label>
             </div>
             <label class="modal-feedback__label modal-feedback__label--textarea" for="text">
@@ -770,7 +773,7 @@
                 <textarea class="modal-feedback__textarea" name="text" id="text"
                           placeholder="В свободной форме" rows="8"></textarea>
             </label>
-            <button class="modal-feedback__button button">
+            <button class="modal-feedback__button button" type="submit">
                 Отправить
             </button>
         </form>
