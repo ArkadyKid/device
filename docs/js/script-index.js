@@ -21,6 +21,8 @@
   var modalTextElement = modalFeedbackElement.querySelector('#text');
   var modalWrapperElement = modalFeedbackElement.querySelector('.modal__wrapper');
   var modalFormElement = modalFeedbackElement.querySelector('.modal-feedback__form');
+  var modalShowElement = document.querySelectorAll('.modal');
+  var modalShowArray = Array.prototype.slice.call(modalShowElement);
 
   var showMap = function (evt) {
     evt.preventDefault();
@@ -42,7 +44,7 @@
     }
   };
 
-  var modalLocalStorage = function(evt) {
+  var modalLocalStorage = function (evt) {
     if (!modalNameElement.value || !modalEmailElement.value || !modalTextElement.value) {
       evt.preventDefault();
       modalWrapperElement.classList.add(modalErrorClass);
@@ -55,11 +57,15 @@
     }
   };
 
-  var closeModal = function (evt) {
-    evt.preventDefault();
+  var closeModal = function () {
     modalMapElement.classList.remove(modalShowClass);
     modalFeedbackElement.classList.remove(modalShowClass);
     body.classList.remove(overflowBodyClass);
+  };
+
+  var closeModalEvt = function (evt) {
+    evt.preventDefault();
+    closeModal();
   };
 
   var escClose = function (evt) {
@@ -82,10 +88,18 @@
   document.addEventListener('keydown', escClose);
 
   closeArray.forEach(function (element) {
-    element.addEventListener('click', closeModal)
+    element.addEventListener('click', closeModalEvt)
   });
 
   modalFormElement.addEventListener('submit', modalLocalStorage
   );
+
+  modalShowArray.forEach(function (element) {
+    element.addEventListener('click', function (event) {
+      if (event.target === element) {
+        closeModal();
+      }
+    })
+  });
 
 }());
