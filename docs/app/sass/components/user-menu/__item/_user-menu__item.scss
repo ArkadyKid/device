@@ -1,0 +1,6 @@
+.user-menu__item {
+  @include flex;
+  align-items: center;
+  margin-left: 41px;
+  list-style: none;
+}

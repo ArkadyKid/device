@@ -1,0 +1,8 @@
+.slider-product__radio--watch:checked ~ .slider-product--watch {
+  @include flex;
+}
+
+.slider-product__radio--selfie:checked ~ .slider-product--watch,
+.slider-product__radio--quadro:checked ~ .slider-product--watch {
+  display: none;
+}

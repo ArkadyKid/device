@@ -1,0 +1,24 @@
+.catalog__wrapper {
+  position: absolute;
+  left: -59px;
+  top: calc(100% + 18px);
+  z-index: 2;
+  @include flex;
+  padding: 0 60px;
+  width: 1160px;
+  pointer-events: none;
+  opacity: 0;
+  background-color: $color-main;
+  transition: $transition;
+}
+
+.catalog__container:hover .catalog__wrapper,
+.catalog__container:focus-within .catalog__wrapper {
+  opacity: 1;
+  pointer-events: all;
+}
+
+_:-ms-lang(x), .catalog__container:hover .catalog__wrapper {
+  opacity: 1;
+  pointer-events: all;
+}

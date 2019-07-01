@@ -1,0 +1,12 @@
+.user-menu__img {
+  margin-right: 6px;
+}
+
+.user-menu__link:hover .user-menu__img,
+.user-menu__link:focus .user-menu__img {
+  opacity: 0.6;
+}
+
+.user-menu__link:active .user-menu__img {
+  opacity: 0.3;
+}

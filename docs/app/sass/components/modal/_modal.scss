@@ -1,0 +1,12 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  min-height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  animation-name: overlayshow;
+  animation-duration: 200ms;
+}

@@ -1,0 +1,9 @@
+.slider-product__radio--watch:checked ~ .slider-product--watch .slider-product__paginator-label--watch::after {
+  border: 1px solid $color-black;
+}
+
+.slider-product__radio--watch:focus ~ .slider-product--watch .slider-product__paginator-label--watch,
+.slider-product__paginator-label--watch:hover {
+  outline-offset: -2px;
+  outline: rgb(77, 144, 254) auto 5px;
+}

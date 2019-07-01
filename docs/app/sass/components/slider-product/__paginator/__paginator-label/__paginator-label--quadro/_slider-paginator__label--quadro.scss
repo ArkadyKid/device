@@ -1,0 +1,9 @@
+.slider-product__radio--quadro:checked ~ .slider-product--quadro .slider-product__paginator-label--quadro::after {
+  border: 1px solid $color-black;
+}
+
+.slider-product__radio--quadro:focus ~ .slider-product--quadro .slider-product__paginator-label--quadro,
+.slider-product__paginator-label--quadro:hover {
+  outline-offset: -2px;
+  outline: rgb(77, 144, 254) auto 5px;
+}

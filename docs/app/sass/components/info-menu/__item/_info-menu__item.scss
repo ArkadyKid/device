@@ -1,0 +1,11 @@
+.info-menu__item {
+  list-style: none;
+}
+
+.info-menu__item:first-child {
+  margin-right: 34px;
+}
+
+.info-menu__item:last-child {
+  margin-left: auto;
+}

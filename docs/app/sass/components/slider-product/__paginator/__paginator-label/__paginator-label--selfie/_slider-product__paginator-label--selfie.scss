@@ -1,0 +1,9 @@
+.slider-product__radio--selfie:checked ~ .slider-product--selfie .slider-product__paginator-label--selfie::after {
+  border: 1px solid $color-black;
+}
+
+.slider-product__radio--selfie:focus ~ .slider-product--selfie .slider-product__paginator-label--selfie,
+.slider-product__paginator-label--selfie:hover {
+  outline-offset: -2px;
+  outline: rgb(77, 144, 254) auto 5px;
+}

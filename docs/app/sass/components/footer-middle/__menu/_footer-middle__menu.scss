@@ -1,0 +1,6 @@
+.footer-middle__menu {
+  @include flex;
+  justify-content: center;
+  @include reset-indents;
+  max-width: 65%;
+}

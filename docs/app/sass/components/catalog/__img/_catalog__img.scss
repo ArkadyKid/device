@@ -1,0 +1,9 @@
+.catalog__img {
+  margin-left: 12px;
+  opacity: 0.3;
+  transition: $transition;
+}
+
+.catalog__container:hover .catalog__img {
+  transform: rotate(90deg);
+}

@@ -1,0 +1,13 @@
+.footer-user__link {
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 44px;
+}
+
+.footer-user__link:hover,
+.footer-user__link:focus {
+  color: $color-white;
+}
+
+.footer-user__link:active {
+  opacity: 0.3;
+}

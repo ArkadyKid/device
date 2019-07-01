@@ -1,0 +1,13 @@
+.slider-product__table-data {
+  font-family: "Gilroy", "Arial", sans-serif;
+  @include font-params(36px, 300, 1.33, 0, $color-black);
+  padding: 0 0 7px;
+}
+
+.slider-product__table-data:first-child {
+  width: 32%;
+}
+
+.slider-product__table-data:nth-child(3) {
+  width: 40%;
+}

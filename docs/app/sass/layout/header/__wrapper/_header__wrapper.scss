@@ -1,0 +1,5 @@
+.header__wrapper {
+  @include flex;
+  min-height: 49px;
+  margin-bottom: 27px;
+}

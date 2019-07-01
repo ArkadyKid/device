@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/fonts";
+@import "abstracts/animations";
+@import "abstracts/functions";
+
+@import "vendors/normalize";
+@import "vendors/vissually-hidden";
+
+@import "base/base";
+
+@import "components/logo/index";
+@import "components/search/index";
+@import "components/user-menu/index";
+@import "components/catalog/index";
+@import "components/info-menu/index";
+@import "components/button/index";
+@import "components/slider-products/index";
+@import "components/slider-product/index";
+@import "components/categories/index";
+@import "components/slider-services/index";
+@import "components/manufacturers/index";
+@import "components/about/index";
+@import "components/footer-top/index";
+@import "components/footer-logo/index";
+@import "components/footer-user/index";
+@import "components/footer-middle/index";
+@import "components/bottom/index";
+@import "components/modal-map/index";
+@import "components/modal/index";
+@import "components/modal-feedback/index";
+
+@import "layout/nav/index";
+@import "layout/header/index";
+@import "layout/main/index";
+@import "layout/footer/index";
+@import "layout/body/index";

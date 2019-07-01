@@ -1,0 +1,7 @@
+.slider-product__info {
+  position: relative;
+  @include flex;
+  flex-direction: column;
+  width: calc(100% / 2 - 20px);
+  padding-right: 60px;
+}
