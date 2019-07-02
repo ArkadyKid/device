@@ -113,14 +113,15 @@
   var sliderBlockCreditID = 'slider-services__block--credit';
   var sliderHoverClass = 'slider-services__label--hover';
 
-  var sliderLabelElement = document.querySelectorAll('.slider-services__label');
+  var sliderServicesElement = document.querySelector('.slider-services');
+  var sliderLabelElement = sliderServicesElement.querySelectorAll('.slider-services__label');
   var sliderLabelArray = Array.prototype.slice.call(sliderLabelElement);
-  var sliderDeliveryLabelElement = document.querySelector('.slider-services__label--delivery');
-  var sliderWarrantyLabelElement = document.querySelector('.slider-services__label--warranty');
-  var sliderCreditLabelElement = document.querySelector('.slider-services__label--credit');
-  var sliderDeliveryBlockElement = document.querySelector('.slider-services__block--delivery');
-  var sliderWarrantyBlockElement = document.querySelector('.slider-services__block--warranty');
-  var sliderCreditBlockElement = document.querySelector('.slider-services__block--credit');
+  var sliderDeliveryLabelElement = sliderServicesElement.querySelector('.slider-services__label--delivery');
+  var sliderWarrantyLabelElement = sliderServicesElement.querySelector('.slider-services__label--warranty');
+  var sliderCreditLabelElement = sliderServicesElement.querySelector('.slider-services__label--credit');
+  var sliderDeliveryBlockElement = sliderServicesElement.querySelector('.slider-services__block--delivery');
+  var sliderWarrantyBlockElement = sliderServicesElement.querySelector('.slider-services__block--warranty');
+  var sliderCreditBlockElement = sliderServicesElement.querySelector('.slider-services__block--credit');
 
   sliderLabelArray.forEach(function (element) {
     element.addEventListener('mouseenter', function (event) {
