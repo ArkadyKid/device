@@ -2,7 +2,6 @@
 
 @import "abstracts/variables";
 @import "abstracts/mixins";
-@import "abstracts/fonts";
 @import "abstracts/animations";
 @import "abstracts/functions";
 
@@ -10,6 +9,7 @@
 @import "vendors/vissually-hidden";
 
 @import "base/base";
+@import "base/fonts";
 
 @import "components/logo/index";
 @import "components/search/index";

@@ -102,12 +102,17 @@
     })
   });
 
+  // Оживление слайдера
 
   var sliderNoneID = 'slider-none';
-  var sliderLabelDelivery = 'slider-label--delivery';
-  var sliderShowDeliveryID = 'slider-show--delivery';
-  var sliderShowWarrantyID = 'slider-show--warranty';
-  var sliderShowCreditID = 'slider-show--credit';
+  var sliderLabelDeliveryID = 'slider-label--delivery';
+  var sliderLabelWarrantyID = 'slider-label--warranty';
+  var sliderLabelCreditID = 'slider-label--credit';
+  var sliderBlockDeliveryID = 'slider-services__block--delivery';
+  var sliderBlockWarrantyID = 'slider-services__block--warranty';
+  var sliderBlockCreditID = 'slider-services__block--credit';
+  var sliderHoverClass = 'slider-services__label--hover';
+
   var sliderLabelElement = document.querySelectorAll('.slider-services__label');
   var sliderLabelArray = Array.prototype.slice.call(sliderLabelElement);
   var sliderDeliveryLabelElement = document.querySelector('.slider-services__label--delivery');
@@ -117,31 +122,55 @@
   var sliderWarrantyBlockElement = document.querySelector('.slider-services__block--warranty');
   var sliderCreditBlockElement = document.querySelector('.slider-services__block--credit');
 
-  var sliderHoverClass = 'slider-services__label--hover';
-
   sliderLabelArray.forEach(function (element) {
     element.addEventListener('mouseenter', function (event) {
       if (event.target === sliderDeliveryLabelElement) {
+
         sliderDeliveryLabelElement.removeAttribute('id');
-        sliderDeliveryBlockElement.id = sliderShowDeliveryID;
+
+        sliderWarrantyLabelElement.id = sliderLabelWarrantyID;
+        sliderCreditLabelElement.id = sliderLabelCreditID;
+
+        sliderDeliveryBlockElement.id = sliderBlockDeliveryID;
         sliderWarrantyBlockElement.id = sliderNoneID;
         sliderCreditBlockElement.id = sliderNoneID;
+
+        sliderDeliveryLabelElement.classList.add(sliderHoverClass);
+        sliderWarrantyLabelElement.classList.remove(sliderHoverClass);
+        sliderCreditLabelElement.classList.remove(sliderHoverClass);
+
       }
       if (event.target === sliderWarrantyLabelElement) {
-        sliderDeliveryLabelElement.id = sliderLabelDelivery;
-        sliderDeliveryLabelElement.id = sliderLabelDelivery;
+
+        sliderWarrantyLabelElement.removeAttribute('id');
+
+        sliderDeliveryLabelElement.id = sliderLabelDeliveryID;
+        sliderCreditLabelElement.id = sliderLabelCreditID;
+
         sliderDeliveryBlockElement.id = sliderNoneID;
-        sliderWarrantyBlockElement.id = sliderShowWarrantyID;
+        sliderWarrantyBlockElement.id = sliderBlockWarrantyID;
         sliderCreditBlockElement.id = sliderNoneID;
+
+        sliderDeliveryLabelElement.classList.remove(sliderHoverClass);
+        sliderWarrantyLabelElement.classList.add(sliderHoverClass);
+        sliderCreditLabelElement.classList.remove(sliderHoverClass);
+
       }
       if (event.target === sliderCreditLabelElement) {
-        sliderDeliveryLabelElement.id = sliderLabelDelivery;
+
+        sliderCreditLabelElement.removeAttribute('id');
+
+        sliderDeliveryLabelElement.id = sliderLabelDeliveryID;
+        sliderWarrantyLabelElement.id = sliderLabelWarrantyID;
+
         sliderDeliveryBlockElement.id = sliderNoneID;
         sliderWarrantyBlockElement.id = sliderNoneID;
-        sliderCreditBlockElement.id = sliderShowCreditID;
+        sliderCreditBlockElement.id = sliderBlockCreditID;
+
+        sliderDeliveryLabelElement.classList.remove(sliderHoverClass);
+        sliderWarrantyLabelElement.classList.remove(sliderHoverClass);
+        sliderCreditLabelElement.classList.add(sliderHoverClass);
       }
     });
-
   });
-
 }());
