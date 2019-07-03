@@ -11,6 +11,12 @@
 @import "base/base";
 @import "base/fonts";
 
+@import "layout/nav/index";
+@import "layout/header/index";
+@import "layout/main/index";
+@import "layout/footer/index";
+@import "layout/body/index";
+
 @import "components/logo/index";
 @import "components/search/index";
 @import "components/user-menu/index";
@@ -32,8 +38,3 @@
 @import "components/modal/index";
 @import "components/modal-feedback/index";
 
-@import "layout/nav/index";
-@import "layout/header/index";
-@import "layout/main/index";
-@import "layout/footer/index";
-@import "layout/body/index";
