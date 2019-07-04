@@ -1,0 +1,16 @@
+.fieldset-filter {
+  position: relative;
+  @include reset-indents;
+  @include flex;
+  flex-direction: column;
+  border: none;
+}
+
+.fieldset-filter::before {
+  position: absolute;
+  top: -12px;
+  width: 201px;
+  height: 2px;
+  background-color: $color-black;
+  content: '';
+}

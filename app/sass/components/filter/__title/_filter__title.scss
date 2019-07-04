@@ -1,5 +1,12 @@
 .filter__title {
+  @include reset-indents;
+  width: 330px;
+  margin-left: auto;
+  padding-left: 63px;
+  padding-top: 23px;
+  padding-bottom: 22px;
   @include font-params(16px, 800, 1.5, 0.2em, $color-black);
   font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
+  background-color: #d9d9d9;
 }

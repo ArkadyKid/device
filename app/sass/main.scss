@@ -17,7 +17,7 @@
 @import "layout/footer/index";
 @import "layout/body/index";
 
-@import "components/fieldset/fieldset";
+@import "components/fieldset-filter/fieldset-filter";
 @import "components/logo/index";
 @import "components/search/index";
 @import "components/user-menu/index";
@@ -41,5 +41,7 @@
 @import "components/category/index";
 @import "components/filter/index";
 @import "components/filter-price/index";
+@import "components/filter-color/index";
+@import "components/filter-bluetooth/index";
 
 @import "pages/catalog-page/index";

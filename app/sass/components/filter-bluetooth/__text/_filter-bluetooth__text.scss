@@ -1,0 +1,29 @@
+.filter-bluetooth__text {
+  position: relative;
+  @include font-params(14px, 300, 2.86, normal, $color-black);
+}
+
+.filter-bluetooth__text::before {
+  position: absolute;
+  top: 50%;
+  left: -41px;
+  transform: translateY(-50%);
+  content: '';
+  padding: 14px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  transition: $transition;
+}
+
+.filter-bluetooth__input:checked ~ .filter-bluetooth__text::before {
+  background-image: url("../img/radio-on.svg");
+}
+
+.filter-bluetooth__label:hover .filter-bluetooth__text::before,
+.filter-bluetooth__input:focus ~ .filter-bluetooth__text::before {
+  opacity: 0.6;
+}
+
+.filter-bluetooth__input:disabled ~ .filter-bluetooth__text {
+  opacity: 0.25;
+}

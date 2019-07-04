@@ -1,0 +1,29 @@
+.filter-color__text {
+  @include font-params(14px, 300, 2.86, normal, $color-black);
+  user-select: none;
+}
+
+.filter-color__text::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: -39px;
+  padding: 17px;
+  transform: translateY(-50%);
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.filter-color__checkbox:checked ~ .filter-color__text::after {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-color__label:hover .filter-color__text::after,
+.filter-color__checkbox:focus ~ .filter-color__text::after {
+  opacity: 0.6;
+}
+
+.filter-color__checkbox:disabled ~ .filter-color__text {
+  opacity: 0.25;
+}

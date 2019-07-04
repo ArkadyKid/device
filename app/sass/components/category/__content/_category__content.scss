@@ -1,0 +1,6 @@
+.category__content {
+  @include flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 830px;
+}
