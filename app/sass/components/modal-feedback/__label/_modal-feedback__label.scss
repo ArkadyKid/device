@@ -1,5 +1,5 @@
 .modal-feedback__label {
-  @include flex();
+  @include flex;
   flex-direction: column;
   @include font-params(18px, 800, 1.33, normal, $color-black);
   font-family: "Gilroy", "Arial", sans-serif;

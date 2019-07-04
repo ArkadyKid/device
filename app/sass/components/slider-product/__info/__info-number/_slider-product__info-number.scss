@@ -2,6 +2,6 @@
   position: absolute;
   top: -12px;
   right: 68px;
-  @include font-params (179px, 800, 1, 0em, $color-white);
+  @include font-params (179px, 800, 1, normal, $color-white);
   font-family: "Gilroy", "Arial", sans-serif;
 }

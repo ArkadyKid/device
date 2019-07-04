@@ -1,4 +1,4 @@
 .about__block-link {
-  @include font-params(16px, 800, 2.5, 0, $color-black);
+  @include font-params(16px, 800, 2.5, normal, $color-black);
   font-family: "Gilroy", "Arial", sans-serif;
 }

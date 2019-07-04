@@ -1,6 +1,6 @@
 .slider-product__table-data {
   font-family: "Gilroy", "Arial", sans-serif;
-  @include font-params(36px, 300, 1.33, 0, $color-black);
+  @include font-params(36px, 300, 1.33, normal, $color-black);
   padding: 0 0 7px;
 }
 

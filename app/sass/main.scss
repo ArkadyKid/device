@@ -17,6 +17,7 @@
 @import "layout/footer/index";
 @import "layout/body/index";
 
+@import "components/fieldset/fieldset";
 @import "components/logo/index";
 @import "components/search/index";
 @import "components/user-menu/index";
@@ -37,4 +38,8 @@
 @import "components/modal-map/index";
 @import "components/modal/index";
 @import "components/modal-feedback/index";
+@import "components/category/index";
+@import "components/filter/index";
+@import "components/filter-price/index";
 
+@import "pages/catalog-page/index";

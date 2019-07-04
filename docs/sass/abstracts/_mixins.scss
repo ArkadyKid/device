@@ -1,16 +1,17 @@
-@mixin flex() {
+@mixin flex {
   display: flex;
   flex-wrap: wrap;
 }
 
-@mixin reset-indents() {
+@mixin reset-indents {
   margin: 0;
   padding: 0;
 }
 
-@mixin container() {
+@mixin container {
   width: 1180px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 10px;
 }
 

@@ -1,0 +1,9 @@
+.filter-price__button {
+  position: absolute;
+  top: -10px;
+  cursor: pointer;
+}
+
+.filter-price__button:hover{
+  transform: scale(1.2);
+}
