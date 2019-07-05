@@ -6,3 +6,13 @@
   @include font-params(14px, 400, 1.29, normal, $color-black);
   background-color: tint($color-mercury, 50%);
 }
+
+.modal-feedback__textarea:hover {
+  background-color: #eaeaea;
+}
+
+.modal-feedback__textarea:focus {
+  background-color: $color-white;
+  background-color: $color-white;
+  outline: 3px solid $color-saffron;
+}

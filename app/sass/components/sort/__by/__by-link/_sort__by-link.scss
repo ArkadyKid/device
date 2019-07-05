@@ -1,0 +1,16 @@
+.sort__by-link {
+  @include font-params(14px, 300, 1.29, normal, rgba($color-black, 0.3));
+}
+
+.sort__by-item:first-child .sort__by-link {
+  color: $color-black;
+}
+
+.sort__by-link:hover,
+.sort__by-link:focus {
+  color: rgba($color-black, 0.6);
+}
+
+.sort__by-link:active {
+  color: $color-black;
+}

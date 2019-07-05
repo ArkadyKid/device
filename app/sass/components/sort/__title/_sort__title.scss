@@ -1,0 +1,6 @@
+.sort__title {
+    @include reset-indents;
+    @include font-params(16px, 800, 1.5, 0.2em, $color-black);
+    font-family: "Gilroy", "Arial", sans-serif;
+    text-transform: uppercase;
+}

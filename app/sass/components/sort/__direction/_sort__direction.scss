@@ -1,0 +1,5 @@
+.sort__direction {
+  @include flex;
+  @include reset-indents;
+  margin-left: auto;
+}

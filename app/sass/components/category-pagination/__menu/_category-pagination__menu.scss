@@ -1,0 +1,6 @@
+.category-pagination__menu {
+  @include flex;
+  justify-content: center;
+  @include reset-indents;
+  min-width: 90px;
+}

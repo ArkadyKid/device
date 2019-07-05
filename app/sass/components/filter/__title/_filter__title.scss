@@ -3,8 +3,9 @@
   width: 330px;
   margin-left: auto;
   padding-left: 63px;
-  padding-top: 23px;
-  padding-bottom: 22px;
+  @include flex;
+  align-items: center;
+  min-height: 70px;
   @include font-params(16px, 800, 1.5, 0.2em, $color-black);
   font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;

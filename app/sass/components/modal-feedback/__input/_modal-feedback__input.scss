@@ -7,3 +7,15 @@
   background-color: tint($color-mercury, 50%);
 }
 
+.modal-feedback__input:hover {
+  background-color: #eaeaea;
+}
+
+.modal-feedback__input:focus {
+  background-color: $color-white;
+  outline: 3px solid $color-saffron;
+}
+
+.modal-feedback__input:invalid {
+  background-color: #f6dada;
+}

@@ -1,0 +1,7 @@
+.sort__wrapper {
+  @include flex;
+  align-items: center;
+  margin-left: 72px;
+  width: 760px;
+  min-height: 70px;
+}

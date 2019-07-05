@@ -4,6 +4,10 @@
   cursor: pointer;
 }
 
+.filter-price__button:last-child {
+  left: 110px;
+}
+
 .filter-price__button:hover{
   transform: scale(1.2);
 }

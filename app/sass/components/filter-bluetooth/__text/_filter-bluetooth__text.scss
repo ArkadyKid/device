@@ -1,6 +1,7 @@
 .filter-bluetooth__text {
   position: relative;
   @include font-params(14px, 300, 2.86, normal, $color-black);
+  user-select: none;
 }
 
 .filter-bluetooth__text::before {
@@ -12,7 +13,6 @@
   padding: 14px;
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
-  transition: $transition;
 }
 
 .filter-bluetooth__input:checked ~ .filter-bluetooth__text::before {

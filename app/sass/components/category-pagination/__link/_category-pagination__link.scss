@@ -1,0 +1,15 @@
+.category-pagination__link {
+  @include font-params(16px, 800, 1.5, 0.2em, $color-black);
+  font-family: "Gilroy", "Arial", sans-serif;
+  text-transform: uppercase;
+  padding: 20px 30px;
+}
+
+.category-pagination__link:hover,
+.category-pagination__link:focus {
+  background-color: #d9d9d9;
+}
+
+.category-pagination__link:active {
+  color: rgba($color-black, 0.3);
+}
