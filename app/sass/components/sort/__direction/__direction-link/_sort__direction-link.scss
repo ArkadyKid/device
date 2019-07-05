@@ -1,4 +1,5 @@
 .sort__direction-link {
+  position: relative;
   opacity: 0.2;
 }
 
@@ -13,4 +14,8 @@
 
 .sort__direction-link:active {
   opacity: 1;
+}
+
+.sort__direction-link:before {
+  @include area(14px);
 }
