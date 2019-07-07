@@ -1,9 +1,0 @@
-.slider-services__menu {
-  @include reset-indents;
-  @include flex;
-  flex-direction: column;
-  justify-content: center;
-  width: calc(100% / 4 - 6px);
-  border-right: 7px solid $color-black;
-  padding: 80px 0 68px;
-}
