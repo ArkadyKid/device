@@ -1,0 +1,9 @@
+.product__image {
+  margin-bottom: 23px;
+  object-fit: contain;
+  transition: $transition;
+}
+
+.product:hover .product__image {
+  opacity: 0.7;
+}

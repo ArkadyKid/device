@@ -1,0 +1,7 @@
+.category__title {
+  @include reset-indents;
+  margin-bottom: 20px;
+  @include font-params(47px, 800, 1.02, 0.01em, $color-black);
+  font-family: "Gilroy", "Arial", sans-serif;
+}
+

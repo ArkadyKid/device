@@ -1,0 +1,4 @@
+.new-label__text {
+  @include font-params(14px, 800, 1.71, 0.05em, $color-black);
+  font-family: "Gilroy", "Arial", sans-serif;
+}

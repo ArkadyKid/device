@@ -1,0 +1,15 @@
+.catalog__link {
+  color: $color-black;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  transition: $transition;
+}
+
+.catalog__link:hover,
+.catalog__link:focus {
+  opacity: 0.6;
+}
+
+.catalog__link:active {
+  opacity: 0.3;
+}

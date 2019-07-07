@@ -1,0 +1,22 @@
+.category-pagination__number-page {
+  position: relative;
+  @include font-params(16px, 800, 1.5, 0.2em, rgba($color-black, 0.3));
+  font-family: "Gilroy", "Arial", sans-serif;
+}
+
+.category-pagination__item:first-child .category-pagination__number-page {
+  color: $color-black;
+}
+
+.category-pagination__number-page:hover,
+.category-pagination__number-page:focus {
+  color: rgba($color-black, 0.6);
+}
+
+.category-pagination__number-page:active {
+  color: $color-black;
+}
+
+.category-pagination__number-page::before {
+  @include area();
+}

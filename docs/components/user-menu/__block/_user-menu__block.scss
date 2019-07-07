@@ -1,0 +1,5 @@
+.user-menu__block {
+  @include flex;
+  justify-content: space-between;
+  max-width: 255px;
+}

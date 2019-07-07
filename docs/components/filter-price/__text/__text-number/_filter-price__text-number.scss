@@ -1,0 +1,8 @@
+.filter-price__text-number {
+  width: 68px;
+  border: none;
+  @include font-params(14px, 300, 1.71, normal, rgba($color-black, 0.2));
+  font-family: "Gilroy", "Arial", sans-serif;
+  background-color: $color-mercury;
+  -moz-appearance: textfield;
+}

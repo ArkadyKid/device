@@ -1,0 +1,5 @@
+.slider-product__table-head {
+  @include font-params(13px, 300, 1.54, normal, $color-tundora);
+  text-align: left;
+  padding: 0;
+}

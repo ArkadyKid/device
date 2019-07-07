@@ -1,0 +1,33 @@
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin reset-indents {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin container {
+  width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+@mixin font-params($font-size: 15px, $font-weight: 300, $line-height: 2, $letter-spacing: 0.01em, $color: $color-tundora) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}
+
+@mixin area($padding: 20px) {
+  position: absolute;
+  padding: $padding;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+}

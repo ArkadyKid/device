@@ -1,0 +1,4 @@
+.product__price {
+  @include font-params(16px, 300, 1.5, 0.01em, $color-tundora);
+  font-family: "Gilroy", "Arial", sans-serif;
+}

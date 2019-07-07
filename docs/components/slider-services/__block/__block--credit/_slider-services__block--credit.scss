@@ -1,0 +1,14 @@
+.slider-services__input--warranty:checked ~ .slider-services__block--credit,
+.slider-services__input--delivery:checked ~ .slider-services__block--credit {
+  display: none;
+}
+
+.slider-services__input--credit:checked ~ .slider-services__block--credit {
+  @include flex;
+  background-image: url(../img/credit.svg);
+}
+
+#slider-services__block--credit {
+  @include flex;
+  background-image: url(../img/credit.svg);
+}

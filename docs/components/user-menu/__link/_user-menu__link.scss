@@ -1,0 +1,23 @@
+.user-menu__link {
+  position: relative;
+  color: $color-black;
+  transition: $transition;
+}
+
+.user-menu__link::before {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 35px;
+  height: 30px;
+  content: "";
+}
+
+.user-menu__link:hover,
+.user-menu__link:focus {
+  opacity: 0.6;
+}
+
+.user-menu__link:active {
+  opacity: 0.3;
+}

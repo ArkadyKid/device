@@ -1,0 +1,5 @@
+.footer-user__menu {
+  @include flex;
+  justify-content: space-between;
+  @include reset-indents;
+}

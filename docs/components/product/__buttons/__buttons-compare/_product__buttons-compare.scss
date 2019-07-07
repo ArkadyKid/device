@@ -1,0 +1,5 @@
+.product__buttons-compare {
+  max-width: 200px;
+  @include font-params(13px ,300, 2.77, 0.01em, $color-black);
+  text-align: center;
+}

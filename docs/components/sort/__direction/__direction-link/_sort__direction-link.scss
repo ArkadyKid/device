@@ -1,0 +1,21 @@
+.sort__direction-link {
+  position: relative;
+  opacity: 0.2;
+}
+
+.sort__direction-item:last-child .sort__direction-link {
+  opacity: 1;
+}
+
+.sort__direction-link:hover,
+.sort__direction-link:focus {
+  opacity: 0.4;
+}
+
+.sort__direction-link:active {
+  opacity: 1;
+}
+
+.sort__direction-link:before {
+  @include area(14px);
+}

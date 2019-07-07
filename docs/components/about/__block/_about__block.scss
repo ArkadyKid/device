@@ -1,0 +1,12 @@
+.about__block {
+  position: relative;
+  width: 50%;
+}
+
+.about__block:before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  background-color: $color-black;
+}

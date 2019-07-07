@@ -1,0 +1,6 @@
+.sort__by {
+  @include flex;
+  @include reset-indents;
+  max-width: 50%;
+  margin-left: 55px;
+}

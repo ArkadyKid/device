@@ -1,0 +1,9 @@
+.category-pagination {
+  @include flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+  width: 760px;
+  margin-left: 73px;
+  background-color: $color-mercury;
+}

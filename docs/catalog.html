@@ -192,83 +192,114 @@
         <div class="category__wrapper">
             <div class="category__filter filter">
                 <section class="filter__wrapper">
-                    <h3 class="filter__title">
-                        Фильтр:
-                    </h3>
+                    <div class="filter__title-wrapper">
+                        <h3 class="filter__title">
+                            Фильтр:
+                        </h3>
+                    </div>
                     <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
-                        <fieldset class="filter__price filter-price fieldset">
+                        <fieldset class="filter__price filter-price fieldset-filter">
                             <legend class="filter-price__title filter__legend">
                                 Стоимость
                             </legend>
                             <div class="filter-price__range">
-                                <div class="filter-price__button filter-price__button--from">
-                                    <svg class="filter-price__button-image" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-                                        <path fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" opacity=".3"></path>
+                                <div class="filter-price__button">
+                                    <svg class="filter-price__button-image" xmlns="http://www.w3.org/2000/svg"
+                                         width="20" height="23" viewBox="0 0 20 23">
+                                        <path fill="#ABABAB"
+                                              d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"
+                                              opacity=".3"></path>
                                         <circle cx="10" cy="10" r="10" fill="#FFF"></circle>
                                         <circle cx="10" cy="10" r="2" fill="#ABABAB"></circle>
                                     </svg>
                                 </div>
-                                <div class="filter-price__button filter-price__button--to">
-                                    <svg class="filter-price__button-image" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-                                        <path fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" opacity=".3"></path>
+                                <div class="filter-price__button">
+                                    <svg class="filter-price__button-image" xmlns="http://www.w3.org/2000/svg"
+                                         width="20" height="23" viewBox="0 0 20 23">
+                                        <path fill="#ABABAB"
+                                              d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"
+                                              opacity=".3"></path>
                                         <circle cx="10" cy="10" r="10" fill="#FFF"></circle>
                                         <circle cx="10" cy="10" r="2" fill="#ABABAB"></circle>
                                     </svg>
                                 </div>
                             </div>
-                            <span class="filter-price__text filter-price__text--from">
-                                от 0
-                            </span>
-                            <span class="filter-price__text filter-price__text--to">
-                                до 5000
-                            </span>
+                            <div class="filter-price__wrapper">
+                                <label class="filter-price__text">
+                                    от
+                                    <input class="filter-price__text-number" type="number" value="0" disabled>
+                                </label>
+                                <label class="filter-price__text">
+                                    до
+                                    <input class="filter-price__text-number" type="number" value="5000" disabled>
+                                </label>
+                            </div>
                         </fieldset>
-                        <fieldset class="filter__color filter-color fieldset">
+                        <fieldset class="filter__color filter-color fieldset-filter">
                             <legend class="filter-color__title filter__legend">
                                 Цвет
                             </legend>
                             <label class="filter-color__label" for="color-black">
-                                <input class="filter-color__radio" id="color-black" type="checkbox" value="black"
+                                <input class="filter-color__checkbox visually-hidden" id="color-black" type="checkbox"
+                                       value="black"
                                        name="color" checked>
-                                Черный
+                                <span class="filter-color__text">
+                                    Черный
+                                </span>
                             </label>
                             <label class="filter-color__label" for="color-white">
-                                <input class="filter-color__radio" id="color-white" type="checkbox" value="white"
+                                <input class="filter-color__checkbox visually-hidden" id="color-white" type="checkbox"
+                                       value="white"
                                        name="color">
-                                Белый
+                                <span class="filter-color__text">
+                                    Белый
+                                </span>
                             </label>
                             <label class="filter-color__label" for="color-blue">
-                                <input class="filter-color__radio" id="color-blue" type="checkbox" value="blue"
+                                <input class="filter-color__checkbox visually-hidden" id="color-blue" type="checkbox"
+                                       value="blue"
                                        name="color" checked>
-                                Синий
+                                <span class="filter-color__text">
+                                    Синий
+                                </span>
                             </label>
                             <label class="filter-color__label" for="color-red">
-                                <input class="filter-color__radio" id="color-red" type="checkbox" value="red"
+                                <input class="filter-color__checkbox visually-hidden" id="color-red" type="checkbox"
+                                       value="red"
                                        name="color"
                                        checked>
-                                Красный
+                                <span class="filter-color__text">
+                                    Красный
+                                </span>
                             </label>
                             <label class="filter-color__label" for="color-pink">
-                                <input class="filter-color__radio" id="color-pink" type="checkbox" value="pink"
+                                <input class="filter-color__checkbox visually-hidden" id="color-pink" type="checkbox"
+                                       value="pink"
                                        name="color">
-                                Розовый
+                                <span class="filter-color__text">
+                                    Розовый
+                                </span>
                             </label>
                         </fieldset>
-                        <fieldset class="filter__bluetooth filter-bluetooth fieldset">
+                        <fieldset class="filter__bluetooth filter-bluetooth fieldset-filter">
                             <legend class="filter-bluetooth__title filter__legend">
                                 Bluetooth
                             </legend>
-                            <label for="bluetooth-true" class="filter-bluetooth__label">
-                                <input class="filter-bluetooth__input" id="bluetooth-true" type="radio"
+                            <label class="filter-bluetooth__label" for="bluetooth-true">
+                                <input class="filter-bluetooth__input visually-hidden" id="bluetooth-true" type="radio"
                                        name="bluetooth"
                                        value="true" checked>
-                                Есть
+                                <span class="filter-bluetooth__text">
+                                    Есть
+                                </span>
                             </label>
-                            <label for="bluetooth-false" class="filter-bluetooth__label">
-                                <input class="filter-bluetooth__input" id="bluetooth-false" type="radio"
+                            <label class="filter-bluetooth__label" for="bluetooth-false">
+                                <input class="filter-bluetooth__input visually-hidden" id="bluetooth-false" type="radio"
                                        name="bluetooth"
                                        value="false">
-                                Нет
+                                <span class="filter-bluetooth__text">
+                                    Нет
+                                </span>
                             </label>
                         </fieldset>
                         <button class="filter__button button">
@@ -279,65 +310,66 @@
             </div>
             <div class="category__content">
                 <section class="category__sort sort">
-                    <h3 class="sort__title">
-                        Сортировка:
-                    </h3>
-                    <ul class="sort__by-menu">
-                        <li class="sort__by-item">
-                            <a class="sort__by-link" href="#">
-                                По цене
-                            </a>
-                        </li>
-                        <li class="sort__by-item">
-                            <a class="sort__by-link" href="#">
-                                По типу
-                            </a>
-                        </li>
-                        <li class="sort__by-item">
-                            <a class="sort__by-link" href="#">
-                                По популярности
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="sort__direction-menu">
-                        <li class="sort__direction-item">
-                            <a class="sort__direction-link" href="#">
-                                <svg class="sort__direction-img sort__direction-img--up"
-                                     xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                                    <path fill="#231F20" d="M5.5 0L0 10h11z"></path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="sort__direction-item">
-                            <a class="sort__direction-link" href="#">
-                                <svg class="sort__direction-img sort__direction-img--down"
-                                     xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                                    <path fill="#231F20" d="M5.5 10L0 0h11"></path>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="sort__wrapper">
+                        <h3 class="sort__title">
+                            Сортировка:
+                        </h3>
+                        <ul class="sort__by">
+                            <li class="sort__by-item">
+                                <a class="sort__by-link" href="#">
+                                    По цене
+                                </a>
+                            </li>
+                            <li class="sort__by-item">
+                                <a class="sort__by-link" href="#">
+                                    По типу
+                                </a>
+                            </li>
+                            <li class="sort__by-item">
+                                <a class="sort__by-link" href="#">
+                                    По популярности
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="sort__direction">
+                            <li class="sort__direction-item">
+                                <a class="sort__direction-link" href="#">
+                                    <svg class="sort__direction-img sort__direction-img--up"
+                                         xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                        <path fill="#231F20" d="M5.5 0L0 10h11z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="sort__direction-item">
+                                <a class="sort__direction-link" href="#">
+                                    <svg class="sort__direction-img sort__direction-img--down"
+                                         xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                        <path fill="#231F20" d="M5.5 10L0 0h11"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
                 <ul class="category__products">
                     <li class="category__product product">
-                        <div class="product__buttons">
-                            <a class="product__buttons-cart button" href="#">
-                                В корзину
-                            </a>
-                            <a class="product__buttons-compare" href="#">
-                                Добавить к сравнению
-                            </a>
+                        <div class="product__container">
+                            <div class="product__buttons">
+                                <a class="product__buttons-cart button" href="#">
+                                    В корзину
+                                </a>
+                                <a class="product__buttons-compare" href="#">
+                                    Добавить к сравнению
+                                </a>
+                            </div>
+                            <div class="product__image">
+                                <img src="img/amateur-monopod.jpg" alt="Любительская селфи-палка" width="360"
+                                     height="380">
+                            </div>
                         </div>
-                        <div class="product__image">
-                            <img src="img/amateur-monopod.jpg" alt="Любительская селфи-палка" width="360"
-                                 height="380">
-                        </div>
-                        <span class="product__new-label">
-                            NEW
-                        </span>
                         <div class="product__wrapper">
                             <a class="product__name" href="#">
-                                Любительская селфи-палка
+                                Любительская селфи&#8209;палка
                             </a>
                             <span class="product__price">
                                 500 руб.
@@ -345,24 +377,23 @@
                         </div>
                     </li>
                     <li class="category__product product">
-                        <div class="product__buttons">
-                            <a class="product__buttons-cart button" href="#">
-                                В корзину
-                            </a>
-                            <a class="product__buttons-compare" href="#">
-                                Добавить к сравнению
-                            </a>
+                        <div class="product__container">
+                            <div class="product__buttons">
+                                <a class="product__buttons-cart button" href="#">
+                                    В корзину
+                                </a>
+                                <a class="product__buttons-compare" href="#">
+                                    Добавить к сравнению
+                                </a>
+                            </div>
+                            <div class="product__image">
+                                <img src="img/pro-monopod.jpg" alt="Профессиональная селфи-палка" width="360"
+                                     height="380">
+                            </div>
                         </div>
-                        <div class="product__image">
-                            <img src="img/pro-monopod.jpg" alt="Профессиональная селфи-палка" width="360"
-                                 height="380">
-                        </div>
-                        <span class="product__new-label">
-                            NEW
-                        </span>
                         <div class="product__wrapper">
                             <a class="product__name" href="#">
-                                Профессиональная селфи-палка
+                                Профессиональная селфи&#8209;палка
                             </a>
                             <span class="product__price">
                                 1 500 руб.
@@ -370,23 +401,22 @@
                         </div>
                     </li>
                     <li class="category__product product">
-                        <div class="product__buttons">
-                            <a class="product__buttons-cart button" href="#">
-                                В корзину
-                            </a>
-                            <a class="product__buttons-compare" href="#">
-                                Добавить к сравнению
-                            </a>
+                        <div class="product__container">
+                            <div class="product__buttons">
+                                <a class="product__buttons-cart button" href="#">
+                                    В корзину
+                                </a>
+                                <a class="product__buttons-compare" href="#">
+                                    Добавить к сравнению
+                                </a>
+                            </div>
+                            <div class="product__image">
+                                <img src="img/water-mono.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+                            </div>
                         </div>
-                        <div class="product__image">
-                            <img src="img/water-mono.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-                        </div>
-                        <span class="product__new-label">
-                            NEW
-                        </span>
                         <div class="product__wrapper">
                             <a class="product__name" href="#">
-                                Непотопляемая селфи-палка
+                                Непотопляемая селфи&#8209;палка
                             </a>
                             <span class="product__price">
                                 2 500 руб.
@@ -394,24 +424,28 @@
                         </div>
                     </li>
                     <li class="category__product product">
-                        <div class="product__buttons">
-                            <a class="product__buttons-cart button" href="#">
-                                В корзину
-                            </a>
-                            <a class="product__buttons-compare" href="#">
-                                Добавить к сравнению
-                            </a>
+                        <div class="product__container">
+                            <div class="product__buttons">
+                                <a class="product__buttons-cart button" href="#">
+                                    В корзину
+                                </a>
+                                <a class="product__buttons-compare" href="#">
+                                    Добавить к сравнению
+                                </a>
+                            </div>
+                            <div class="product__image">
+                                <img src="img/follow-mono.jpg" alt="Селфи-палка «Следуй за мной»" width="360"
+                                     height="380">
+                            </div>
                         </div>
-                        <div class="product__image">
-                            <img src="img/follow-mono.jpg" alt="Селфи-палка «Следуй за мной»" width="360"
-                                 height="380">
-                        </div>
-                        <span class="product__new-label">
+                        <div class="product__new-label new-label">
+                            <span class="new-label__text">
                             NEW
-                        </span>
+                            </span>
+                        </div>
                         <div class="product__wrapper">
                             <a class="product__name" href="#">
-                                Селфи-палка «Следуй за мной»
+                                Селфи&#8209;палка «Следуй за мной»
                             </a>
                             <span class="product__price">
                                 4 900 руб.
@@ -420,7 +454,7 @@
                     </li>
                 </ul>
                 <section class="category__pagination category-pagination">
-                    <h3 class="category-pagination__title">
+                    <h3 class="category-pagination__title visually-hidden">
                         Пагинация
                     </h3>
                     <a class="category-pagination__link">

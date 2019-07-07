@@ -1,0 +1,8 @@
+.categories__item:nth-child(2) .categories__img {
+  align-self: flex-end;
+  transition: $transition;
+}
+
+.categories__link:active .categories__img {
+  opacity: 0.3;
+}

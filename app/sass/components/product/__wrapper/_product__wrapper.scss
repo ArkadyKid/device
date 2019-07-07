@@ -1,0 +1,5 @@
+.product__wrapper {
+  @include flex;
+  justify-content: space-between;
+  max-width: 360px;
+}

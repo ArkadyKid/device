@@ -1,0 +1,11 @@
+.new-label {
+  @include flex;
+  align-items: center;
+  justify-content: center;
+  width: 61px;
+  height: 61px;
+  border: 2px solid $color-black;
+  border-radius: 50%;
+  opacity: 0.1;
+  background-color: transparent;
+}

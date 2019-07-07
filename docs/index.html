@@ -762,7 +762,8 @@
             <div class="modal-feedback__inputs">
                 <label class="modal-feedback__label" for="name">
                     Ваше имя:
-                    <input class="modal-feedback__input" id="name" type="text" placeholder="Имя Фамилия" name="name">
+                    <input class="modal-feedback__input" id="name" type="text" pattern="^[а-яА-ЯёЁa-zA-Z\s]+$"
+                           placeholder="Имя Фамилия" name="name">
                 </label>
                 <label class="modal-feedback__label" for="email">
                     Ваш e-mail:

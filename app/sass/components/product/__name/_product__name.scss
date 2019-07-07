@@ -1,0 +1,5 @@
+.product__name {
+  max-width: 280px;
+  @include font-params(18px, 800, 1.33, 0.01em, $color-black);
+  font-family: "Gilroy", "Arial", sans-serif;
+}
