@@ -26,12 +26,11 @@
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "imagemin-pngquant": "^8.0.0"
-  },
-  "dependencies": {
+    "imagemin-pngquant": "^8.0.0",
     "minimist": ">=1.2.3",
     "kind-of": ">=6.0.3",
     "lodash": ">=4.17.19"
   },
+  "dependencies": {},
   "description": ""
 }
