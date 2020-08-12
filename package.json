@@ -28,6 +28,10 @@
     "gulp-sass": "^4.0.2",
     "imagemin-pngquant": "^8.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "minimist": ">=1.2.3",
+    "kind-of": ">=6.0.3",
+    "lodash": ">=4.17.19"
+  },
   "description": ""
 }
